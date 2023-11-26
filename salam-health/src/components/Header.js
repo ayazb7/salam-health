@@ -1,13 +1,31 @@
-// Header.js
+// App.js
 import React from 'react';
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
+import Home from './components/Home';
+import About from './components/About';
+import Contact from './components/Contact';
+import './App.css'; // Import your CSS file for styling
 
-const Header = () => {
+function App() {
   return (
-    <header>
-      <h1>Medical Health App</h1>
-      {/* Add navigation links or other header content as needed */}
-    </header>
-  );
-};
+    <Router>
+      <div>
+        <nav className="navbar">
+          <ul className="nav-list">
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
+          </ul>
+        </nav>
 
-export default Header;
+        <Switch>
+          <Route path="/about" component={About} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/" component={Home} />
+        </Switch>
+      </div>
+    </Router>
+  );
+}
+
+export default App;
