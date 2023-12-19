@@ -38,32 +38,66 @@
 }
 
 .navbar {
-  background-color: #333; /* Set background color */
+  background-color: rgb(17, 11, 39); /* Set background color */
   overflow: hidden;
+  padding-left: 20;
 }
 
 .nav-list {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex; /* Make the list items horizontal */
+  text-align: right;
+  justify-content: flex-end;
+  display: flex;
 }
 
 .nav-list li {
-  float: left;
-  margin-right: 20px;
+  margin-right: 100px;
 }
 
 .nav-list li a {
   display: block;
-  color: white;
+  color: #ecf0f1;
+  font-size: large;
   text-align: center;
-  padding: 14px 16px;
+  padding: 10px 12px;
   text-decoration: none;
+  font-weight: bold;
+  opacity: 70%;
+  transition: background-color 0.3s ease, color 0.3s ease, font-size 0.3s ease; /* Add transition effect */
 }
 
-/* Add hover effect */
 .nav-list li a:hover {
-  background-color: #ddd;
-  color: black;
+  opacity: 100%;
+  color: rgb(254, 254, 255); /* White radiance effect for text */
+  font-size: 18px; /* Adjust the desired font size */
+}
+
+/* App.css or your custom CSS file */
+.home-background {
+  height: 100vh; /* Set the height to 100% of the viewport height */
+  background-color: #06002a; /* Set the background color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color:white;
+  font-family: 'Gilroy', sans-serif; 
+  line-height: 20px;
+  font-size: 50px;
+ 
+}
+
+.hidden {
+  opacity: 0;
+  transition: all 1s;
+}
+.show {
+  opacity: 0.95;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+  margin-left: auto;
+  /* Add other styling as needed */
 }
