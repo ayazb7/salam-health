@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 .App {
   text-align: center;
+  background-color: #06002a;
 }
 
 .App-logo {
@@ -37,21 +40,96 @@
   }
 }
 
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%); /* Start from above the top of the viewport */
+  }
+  to {
+    transform: translateY(0); /* End at the navbar's natural position */
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Start 20px below the final position */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* End at the final position */
+  }
+}
+
+
+body {
+  background-color: #06002a; /* Set the background color for the entire website */
+  margin: 0; /* Remove default body margin */
+  padding: 0; /* Remove default body padding */
+  font-family: 'Poppins', sans-serif;
+}
+
 .navbar {
-  background-color: rgb(17, 11, 39); /* Set background color */
-  overflow: hidden;
-  padding-left: 20;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: space-around; /* Aligns all items on the main axis to the center */
+  align-items: center;
+  margin: 10px;
+  margin-top: 15px;
+  animation: slideDown 0.5s ease forwards;
+}
+
+.nav-brand {
+  justify-content: center; /* Centers the logo horizontally */
+  display: flex;
+}
+
+.nav-item-left, .nav-item-right {
+  display: flex;
+  align-items: center; /* Aligns items vertically */
+  /* Removed margin-right:auto and margin-left:auto */
+}
+
+.nav-item-left a:first-child {
+  margin-left: 30px;
+}
+
+.nav-item-right a:last-child {
+  margin-right: 30px;
+}
+
+/* Targets links inside nav-item-left and nav-item-right specifically */
+.nav-item-left a, .nav-item-right a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0 40px; /* Adjusts spacing between the items */
+  padding: 10px 0;
+  transition: color 0.3s ease;
+}
+
+/* Adds a hover effect */
+.nav-item-left a:hover, .nav-item-right a:hover {
+  color: #ccc;
+  text-decoration: none;
 }
 
 .nav-list {
   list-style-type: none;
-  text-align: right;
-  justify-content: flex-end;
   display: flex;
+  justify-content: center; /* Or use space-between based on your preference */
+  align-items: center; /* Keeps items vertically centered */
+  padding: 0; /* Remove default padding */
+  width: 100%; /* Ensures the list takes full width of its container */
 }
 
 .nav-list li {
-  margin-right: 100px;
+  margin: 0 100px; /* Adds horizontal margin to each list item */
 }
 
 .nav-list li a {
@@ -72,6 +150,27 @@
   font-size: 18px; /* Adjust the desired font size */
 }
 
+.book-now {
+  display: inline-block; /* Allows width and height to be set */
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 30px; /* Rounded corners */
+  background-color: #007bff; /* A shade of blue */
+  color: white; /* Text color */
+  text-decoration: none; /* Removes underline */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.book-now:hover {
+  background-color: #0056b3; /* Darker shade of blue on hover */
+  cursor: pointer;
+}
+
+.book-now-text {
+  margin: 10px;
+  font-weight: bold;
+}
+
 /* App.css or your custom CSS file */
 .home-background {
   height: 100vh; /* Set the height to 100% of the viewport height */
@@ -84,20 +183,113 @@
   font-family: 'Gilroy', sans-serif; 
   line-height: 20px;
   font-size: 50px;
- 
 }
 
 .hidden {
   opacity: 0;
-  transition: all 1s;
+  transform: translateY(20px); /* Move elements down by 20px initially */
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
+
+.initial-hidden .hidden {
+  opacity: 0;
+  transform: translateY(20px); /* Keep the transformed state */
+  visibility: hidden; /* Ensures elements are not visible */
+}
+
+.start-animation .hidden {
+  animation: fadeIn 1s ease forwards;
+  visibility: visible;
+}
+
 .show {
-  opacity: 0.95;
+  opacity: 1;
+  transform: translateY(0); /* Reset the position */
 }
 
 .logo {
-  width: 50px;
   height: auto;
-  margin-left: auto;
-  /* Add other styling as needed */
+  width: 30%;
+}
+
+.logo-image {
+  height: auto;
+  width: 10%;
+}
+
+.title {
+  height: auto;
+  width: 20%;
+}
+
+.centered-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.home-description,
+.home-description-bottom,
+.images,
+.book-text {
+  margin-bottom: 70px; /* Adjust the value as needed */
+}
+
+/* Remove the bottom margin from the last item to avoid extra space at the bottom */
+.centered-container > *:last-child {
+  margin-bottom: 0;
+}
+
+.home-description {
+  font-size: 50px;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: -10px;
+}
+
+.home-description-bottom {
+  font-size: 50px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.images {
+  width: 100%;
+}
+
+.home-image {
+  height: auto;
+  width: 15%;
+  border-radius: 10px;
+  margin: 0 50px; /* Adds horizontal spacing between the images */
+}
+
+.book-now-button {
+  display: inline-block; /* Allows width and height to be set */
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 40px;
+  border-radius: 30px; /* Rounded corners */
+  background-color: #007bff; /* A shade of blue */
+  color: white; /* Text color */
+  text-decoration: none; /* Removes underline */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+  font-size: 25px;
+}
+
+.book-now-button:hover {
+  background-color: #0056b3; /* Darker shade of blue on hover */
+  cursor: pointer;
+}
+
+.book-text {
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: rgb(254, 254, 255);
+  margin-bottom: -15px;
 }
