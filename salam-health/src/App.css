@@ -66,6 +66,7 @@ body {
   margin: 0; /* Remove default body margin */
   padding: 0; /* Remove default body padding */
   font-family: 'Poppins', sans-serif;
+  overflow: hidden;
 }
 
 .navbar {
@@ -247,13 +248,20 @@ body {
 .home-description {
   font-size: 50px;
   font-family: 'Poppins', sans-serif;
-  margin-bottom: -10px;
+  margin-bottom: -15px;
 }
 
 .home-description-bottom {
   font-size: 50px;
   font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #0B93BD, #03314D); /* Gradient color */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; /* Makes the text transparent to show the background */
+  -webkit-text-fill-color: transparent; /* For WebKit browsers */
+  line-height: 1.25;
 }
+
 
 .images {
   width: 100%;
