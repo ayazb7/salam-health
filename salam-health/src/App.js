@@ -48,10 +48,10 @@ function App() {
             <a href="/">Home</a>
             <a href="/about">About</a>
           </div>
-          <Link to="/" className="nav-brand">
+          <a href="/" className="nav-brand">
             <img src={LogoImage} alt="Logo" className="logo" />
             {/* <img src={TitleImage} alt="Title" className="title" /> */}
-          </Link>
+          </a>
           {/* <a href="/" className="nav-brand">Salam Health</a> */}
           <div className="nav-item-right">
             <a href="/contact">Contact</a>

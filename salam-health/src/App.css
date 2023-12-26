@@ -175,7 +175,7 @@ body {
 /* App.css or your custom CSS file */
 .home-background {
   height: 100vh; /* Set the height to 100% of the viewport height */
-  background-color: #06002a; /* Set the background color */
+  background-image: linear-gradient(to bottom, #0a0224, #0b132f, #0c1d3b, #0d2747, #0d3252, #103b5c, #124467, #154e71, #1b587d, #22628a, #286c97, #2e77a4);/* Set the background color */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -248,18 +248,12 @@ body {
 .home-description {
   font-size: 50px;
   font-family: 'Poppins', sans-serif;
-  margin-bottom: -15px;
+  margin-bottom: -10px;
 }
 
 .home-description-bottom {
   font-size: 50px;
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to right, #0B93BD, #03314D); /* Gradient color */
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent; /* Makes the text transparent to show the background */
-  -webkit-text-fill-color: transparent; /* For WebKit browsers */
-  line-height: 1.25;
 }
 
 
@@ -271,8 +265,10 @@ body {
   height: auto;
   width: 15%;
   border-radius: 10px;
-  margin: 0 50px; /* Adds horizontal spacing between the images */
+  margin: 0 50px;
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5); /* Example shadow */
 }
+
 
 .book-now-button {
   display: inline-block; /* Allows width and height to be set */
@@ -287,6 +283,7 @@ body {
   text-decoration: none; /* Removes underline */
   transition: background-color 0.3s ease; /* Smooth background color transition */
   font-size: 25px;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.3);
 }
 
 .book-now-button:hover {
