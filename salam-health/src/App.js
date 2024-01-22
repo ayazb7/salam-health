@@ -45,11 +45,8 @@ function App() {
     <Router>
       <div>
         <nav className="navbar">
-          <div className="nav-item-left">
-          </div>
-          <a href="/" className="nav-brand">
-            <img src={LogoImage} alt="Logo" className="logo"/>
-          </a>
+          <img src={LogoImage} alt="Logo" className="logo"/>
+          
           <div className="nav-item-right">
             <a href="/contact">Contact</a>
             <div className="book-now">
@@ -60,9 +57,9 @@ function App() {
         </nav>
 
         <Routes>
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/" element={<Home />} />
           <Route path="/book" element={<Book />} />
         </Routes>
       </div>
