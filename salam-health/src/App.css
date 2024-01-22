@@ -85,6 +85,11 @@ body {
   animation: slideDown 0.5s ease forwards;
 }
 
+.logo {
+  display: block;
+  margin: 0 auto; /* Center the image horizontally */
+}
+
 .nav-brand {
   justify-content: center; /* Centers the logo horizontally */
   display: flex;
@@ -175,7 +180,7 @@ body {
 /* App.css or your custom CSS file */
 .home-background {
   height: 100vh; /* Set the height to 100% of the viewport height */
-  background-image: linear-gradient(to bottom, #0a0224, #0b132f, #0c1d3b, #0d2747, #0d3252, #103b5c, #124467, #154e71, #1b587d, #22628a, #286c97, #2e77a4);/* Set the background color */
+  background-image: linear-gradient(to bottom, #000000, #00061a, #010a28, #030e2c, #07102e, #020c2e, #010f3a, #0a1d53d2, #132250, #1d2a51, #1c2e63, #1c2a50);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -211,6 +216,7 @@ body {
 .logo {
   height: auto;
   width: 30%;
+  padding-left: 169px;
 }
 
 .logo-image {
@@ -298,3 +304,24 @@ body {
   color: rgb(254, 254, 255);
   margin-bottom: -15px;
 }
+/* Existing styles ... */
+
+.book-now-link{
+  display: inline-block;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 30px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  /* transition: background-color 0.3s ease; */
+  outline: none; /* Remove the default focus outline */
+}
+
+.book-now-link:hover {
+  background-color: #0056b3;
+  transform: none; /* Disable any transformations on hover */
+  cursor: pointer;
+}
+
+/* Existing styles ... */

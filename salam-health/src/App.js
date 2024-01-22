@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
+import Book from './components/Book'
 import LogoImage from './images/logo-with-text.png';
 import './App.css';
 
@@ -45,18 +46,15 @@ function App() {
       <div>
         <nav className="navbar">
           <div className="nav-item-left">
-            <a href="/">Home</a>
-            <a href="/about">About</a>
           </div>
           <a href="/" className="nav-brand">
-            <img src={LogoImage} alt="Logo" className="logo" />
-            {/* <img src={TitleImage} alt="Title" className="title" /> */}
+            <img src={LogoImage} alt="Logo" className="logo"/>
           </a>
-          {/* <a href="/" className="nav-brand">Salam Health</a> */}
           <div className="nav-item-right">
             <a href="/contact">Contact</a>
             <div className="book-now">
-              <p href="/book" className="book-now-text">Book Now</p>
+              {/* <p href="/book" className="book-now-text">Book Now</p> */}
+              <Link to="/book" className="book-now-link">Book Now</Link>
             </div>
           </div>
         </nav>
@@ -65,6 +63,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/" element={<Home />} />
+          <Route path="/book" element={<Book />} />
         </Routes>
       </div>
     </Router>
