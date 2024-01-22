@@ -68,6 +68,11 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+/* .main-content {
+  height: 100%;
+  padding-bottom: 2.5rem;
+} */
+
 .navbar {
   position: fixed;
   top: 0;
@@ -148,19 +153,25 @@ body {
 
 .book-now {
   display: inline-block; /* Allows width and height to be set */
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0.5rem 1.25rem;
   border-radius: 30px; /* Rounded corners */
   background-color: #007bff; /* A shade of blue */
   color: white; /* Text color */
   text-decoration: none; /* Removes underline */
   transition: background-color 0.3s ease; /* Smooth background color transition */
+  border: none; /* NEW - remove default button border */
+  outline: none; /* NEW - remove focus outline */
+  cursor: pointer; /* NEW - ensure it's clear this is clickable */
+  text-align: center; /* NEW - ensure text is centered */
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .book-now:hover {
   background-color: #0056b3; /* Darker shade of blue on hover */
-  cursor: pointer;
 }
+
 
 .book-now-text {
   margin: 10px;
@@ -169,7 +180,6 @@ body {
 
 /* App.css or your custom CSS file */
 .home-background {
-  height: 100vh; /* Set the height to 100% of the viewport height */
   background-image: linear-gradient(to bottom, #000000, #00061a, #010a28, #030e2c, #07102e, #020c2e, #010f3a, #0a1d53d2, #132250, #1d2a51, #1c2e63, #1c2a50);
   display: flex;
   align-items: center;
@@ -179,6 +189,8 @@ body {
   font-family: 'Gilroy', sans-serif; 
   line-height: 20px;
   font-size: 50px;
+  height: 100%;
+  padding-bottom: 3.5rem;
 }
 
 .hidden {
@@ -314,4 +326,10 @@ body {
   cursor: pointer;
 }
 
-/* Existing styles ... */
+
+
+@media screen and (max-width: 1920px) {
+  .home-description {
+    padding-top: 3.5rem;
+  }
+}

@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link, Routes, useNavigate } from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
-import Book from './components/Book'
+import Book from './components/Book';
+import Navbar from './components/Navbar'; // Import your new Navbar component
 import LogoImage from './images/logo-with-text.png';
 import './App.css';
 
@@ -44,24 +45,26 @@ function App() {
   return (
     <Router>
       <div>
-        <nav className="navbar">
+        <Navbar />
+        {/* <nav className="navbar">
           <img src={LogoImage} alt="Logo" className="logo"/>
           
           <div className="nav-item-right">
             <a href="/contact">Contact</a>
-            <div className="book-now">
-              {/* <p href="/book" className="book-now-text">Book Now</p> */}
-              <Link to="/book" className="book-now-link">Book Now</Link>
-            </div>
+            <button className="book-now" onClick={handleButtonClick}>
+              Book Now
+            </button>
           </div>
-        </nav>
+        </nav> */}
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/book" element={<Book />} />
-        </Routes>
+        <div className="main-content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/book" element={<Book />} />
+          </Routes>
+        </div>
       </div>
     </Router>
   );
