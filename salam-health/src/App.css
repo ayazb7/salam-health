@@ -256,12 +256,21 @@ body {
 .home-description {
   font-size: 50px;
   font-family: 'Poppins', sans-serif;
+  margin-top: 90px;
   margin-bottom: -10px;
 }
 
 .home-description-bottom {
   font-size: 50px;
   font-family: 'Poppins', sans-serif;
+}
+
+.packages-text{
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  padding-top: 5%;
+  text-align: justify;
+  font-weight: bold;
 }
 
 
