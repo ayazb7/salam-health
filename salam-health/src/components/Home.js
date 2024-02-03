@@ -4,6 +4,8 @@ import '../App.css'; // Import your CSS file
 import CuppingImage from '../images/CuppingImage.png';
 import GroupImages from '../images/GroupImages.png';
 import GroupImages2 from '../images/GroupImages2.png';
+import dots from '../images/dots.png';
+
 const Home = () => {
   const [startAnimation, setStartAnimation] = useState(false);
 
@@ -36,6 +38,7 @@ const Home = () => {
     <div className={`home-background ${startAnimation ? 'start-animation' : 'initial-hidden'}`}>
       <div className="centered-container hidden">
       <div className="overlay"></div>
+      <div className="overlay2"></div>
         <img src={GroupImages2} className="plus-imagetop"/>
 
         <div className='vertical-start'>
@@ -54,8 +57,8 @@ const Home = () => {
           </div>
         </div>
 
-
         <img src={CuppingImage} className="cuppingImage"/>
+        <img src={dots} className="dotsImage"/>
 
         <h5 className="book-text">
           Book your free health consultation
