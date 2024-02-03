@@ -35,7 +35,7 @@ const Home = () => {
   return (
     <div className={`home-background ${startAnimation ? 'start-animation' : 'initial-hidden'}`}>
       <div className="centered-container hidden">
-
+      <div className="overlay"></div>
         <img src={GroupImages2} className="plus-imagetop"/>
 
         <h3 className="home-description">
@@ -44,9 +44,10 @@ const Home = () => {
         <h3 className="home-description2">
           Treatments
         </h3>
-        {/* <h3 className="home-description-bottom">
-          specially tailored just for you.
-        </h3> */}
+
+        <p className="home-body1" >We offer a wide range of treatments</p>
+        <p className="home-body2" >based on natural therapies and</p>
+        <p className="home-body3" >holistic healing.</p>
 
          <img src={CuppingImage} className="cuppingImage"/>
 
@@ -56,11 +57,6 @@ const Home = () => {
 
         <img src={GroupImages} className="plus-image1"/>
 
-        {/* <img src={Group} className="plus-image"/> */}
-
-        {/* <div className="book-now-button">
-          <p href="/book" className="book-now-text">Book Now</p>
-        </div> */}
       </div>
     </div>
   );
