@@ -24,7 +24,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(198, 83, 83);
 }
 
 .App-link {
@@ -62,7 +62,7 @@
 
 
 body {
-  background-color: #06002a; /* Set the background color for the entire website */
+  background-color: #ffffff; /* Set the background color for the entire website */
   margin: 0; /* Remove default body margin */
   padding: 0; /* Remove default body padding */
   font-family: 'Poppins', sans-serif;
@@ -106,7 +106,7 @@ body {
 
 /* Targets links inside nav-item-left and nav-item-right specifically */
 .nav-item-left a, .nav-item-right a {
-  color: white;
+  color: rgb(7, 17, 89);
   font-weight: 500;
   text-decoration: none;
   margin: 0 40px; /* Adjusts spacing between the items */
@@ -135,7 +135,7 @@ body {
 
 .nav-list li a {
   display: block;
-  color: #ecf0f1;
+  color: #3291a9;
   font-size: large;
   text-align: center;
   padding: 10px 12px;
@@ -180,8 +180,6 @@ body {
 
 /* App.css or your custom CSS file */
 .home-background {
-  background-image: linear-gradient(to bottom, #000000, #00061a, #010a28, #030e2c, #07102e, #020c2e, #010f3a, #0a1d53d2, #132250, #1d2a51, #1c2e63, #1c2a50);
-  display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -256,13 +254,15 @@ body {
 .home-description {
   font-size: 50px;
   font-family: 'Poppins', sans-serif;
-  margin-top: 90px;
+  margin-top: 200px;
   margin-bottom: -10px;
+  color: black;
 }
 
 .home-description-bottom {
   font-size: 50px;
   font-family: 'Poppins', sans-serif;
+  color: black;
 }
 
 .packages-text{
@@ -284,6 +284,34 @@ body {
   border-radius: 10px;
   margin: 0 50px;
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.5); /* Example shadow */
+}
+.plus-image,
+.plus-image1,
+.plus-imagetop,
+.plus-imagetop1 {
+  position: absolute;
+  top: 0; /* Adjust top position if needed */
+}
+
+.plus-image1 {
+  left:2%; /* Adjust left position if needed */
+  top: 79%;
+}
+.plus-image {
+  left:4%; /* Adjust left position if needed */
+  top: 90%;
+}
+
+.plus-imagetop{
+  position: absolute;
+  right:-32px; /* Adjust left position if needed */
+  top: 149px;
+}
+
+.plus-imagetop1{
+  position: absolute;
+  right:-4%; /* Adjust left position if needed */
+  top: 43%;
 }
 
 

@@ -4,7 +4,8 @@ import '../App.css'; // Import your CSS file
 import CuppingImage from '../images/Salam Health Cupping.webp';
 import MassageImage from '../images/Salam Health Massage.webp';
 import GrastonImage from '../images/graston.webp';
-
+import Group from '../images/Group.png';
+import Group1 from '../images/Group1.png';
 const Home = () => {
   const [startAnimation, setStartAnimation] = useState(false);
 
@@ -37,6 +38,9 @@ const Home = () => {
     <div className={`home-background ${startAnimation ? 'start-animation' : 'initial-hidden'}`}>
       <div className="centered-container hidden">
 
+        <img src={Group} className="plus-imagetop"/>
+        <img src={Group1} className="plus-imagetop1"/>
+
         <h3 className="home-description">
           Holistic healing and natural therapies
         </h3>
@@ -53,6 +57,10 @@ const Home = () => {
         <h5 className="book-text">
           Book your free health consultation
         </h5>
+
+        <img src={Group} className="plus-image"/>
+        <img src={Group1} className="plus-image1"/>
+        {/* <img src={Group} className="plus-image"/> */}
 
         <div className="book-now-button">
           <p href="/book" className="book-now-text">Book Now</p>
