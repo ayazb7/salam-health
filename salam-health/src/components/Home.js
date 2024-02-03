@@ -38,18 +38,24 @@ const Home = () => {
       <div className="overlay"></div>
         <img src={GroupImages2} className="plus-imagetop"/>
 
-        <h3 className="home-description">
-          Specialised Therapeutic
-        </h3>
-        <h3 className="home-description2">
-          Treatments
-        </h3>
+        <div className='vertical-start'>
+          <div className='home-text'>
+            <h3>
+              Specialised Therapeutic
+            </h3>
+            <h3>
+              Treatments
+            </h3>
+          </div>
+          <div className='home-descriptions'>
+            <p>We offer a wide range of treatments</p>
+            <p>based on natural therapies and</p>
+            <p>holistic healing.</p>
+          </div>
+        </div>
 
-        <p className="home-body1" >We offer a wide range of treatments</p>
-        <p className="home-body2" >based on natural therapies and</p>
-        <p className="home-body3" >holistic healing.</p>
 
-         <img src={CuppingImage} className="cuppingImage"/>
+        <img src={CuppingImage} className="cuppingImage"/>
 
         <h5 className="book-text">
           Book your free health consultation
