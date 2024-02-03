@@ -1,11 +1,9 @@
 // Home.js
 import React, { useState, useEffect } from 'react';
 import '../App.css'; // Import your CSS file
-import CuppingImage from '../images/Salam Health Cupping.webp';
-import MassageImage from '../images/Salam Health Massage.webp';
-import GrastonImage from '../images/graston.webp';
-import Group from '../images/Group.png';
-import Group1 from '../images/Group1.png';
+import CuppingImage from '../images/CuppingImage.png';
+import GroupImages from '../images/GroupImages.png';
+import GroupImages2 from '../images/GroupImages2.png';
 const Home = () => {
   const [startAnimation, setStartAnimation] = useState(false);
 
@@ -38,33 +36,31 @@ const Home = () => {
     <div className={`home-background ${startAnimation ? 'start-animation' : 'initial-hidden'}`}>
       <div className="centered-container hidden">
 
-        <img src={Group} className="plus-imagetop"/>
-        <img src={Group1} className="plus-imagetop1"/>
+        <img src={GroupImages2} className="plus-imagetop"/>
 
         <h3 className="home-description">
-          Holistic healing and natural therapies
+          Specialised Therapeutic
         </h3>
-        <h3 className="home-description-bottom">
+        <h3 className="home-description2">
+          Treatments
+        </h3>
+        {/* <h3 className="home-description-bottom">
           specially tailored just for you.
-        </h3>
+        </h3> */}
 
-        <div className="images">
-          <img src={CuppingImage} alt="Cupping" className="home-image" />
-          <img src={MassageImage} alt="Massage" className="home-image" />
-          <img src={GrastonImage} alt="Graston" className="home-image" />
-        </div>
+         <img src={CuppingImage} className="cuppingImage"/>
 
         <h5 className="book-text">
           Book your free health consultation
         </h5>
 
-        <img src={Group} className="plus-image"/>
-        <img src={Group1} className="plus-image1"/>
+        <img src={GroupImages} className="plus-image1"/>
+
         {/* <img src={Group} className="plus-image"/> */}
 
-        <div className="book-now-button">
+        {/* <div className="book-now-button">
           <p href="/book" className="book-now-text">Book Now</p>
-        </div>
+        </div> */}
       </div>
     </div>
   );

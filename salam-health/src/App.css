@@ -239,27 +239,23 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-.home-description,
-.home-description-bottom,
-.images,
-.book-text {
-  margin-bottom: 70px; /* Adjust the value as needed */
+.home-description{
+  position: relative;
+  left: -13%;
+  top:99px;
+}
+.home-description2{
+  position: relative;
+  left: -21%;
+  top: 55px;
 }
 
 /* Remove the bottom margin from the last item to avoid extra space at the bottom */
 .centered-container > *:last-child {
   margin-bottom: 0;
 }
-
+.home-description2,
 .home-description {
-  font-size: 50px;
-  font-family: 'Poppins', sans-serif;
-  margin-top: 200px;
-  margin-bottom: -10px;
-  color: black;
-}
-
-.home-description-bottom {
   font-size: 50px;
   font-family: 'Poppins', sans-serif;
   color: black;
@@ -285,33 +281,26 @@ body {
   margin: 0 50px;
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.5); /* Example shadow */
 }
-.plus-image,
+.cuppingImage,
 .plus-image1,
-.plus-imagetop,
-.plus-imagetop1 {
+.plus-imagetop{
   position: absolute;
   top: 0; /* Adjust top position if needed */
 }
 
-.plus-image1 {
-  left:2%; /* Adjust left position if needed */
-  top: 79%;
+.cuppingImage{
+  top: 38%;
+  right: 21%;
 }
-.plus-image {
-  left:4%; /* Adjust left position if needed */
-  top: 90%;
+
+.plus-image1 {
+  left:16%; /* Adjust left position if needed */
+  top: 122%;
 }
 
 .plus-imagetop{
-  position: absolute;
-  right:-32px; /* Adjust left position if needed */
-  top: 149px;
-}
-
-.plus-imagetop1{
-  position: absolute;
-  right:-4%; /* Adjust left position if needed */
-  top: 43%;
+  right:12%; /* Adjust left position if needed */
+  top: 36%;
 }
 
 
@@ -369,4 +358,5 @@ body {
   .home-description {
     padding-top: 3.5rem;
   }
+
 }
