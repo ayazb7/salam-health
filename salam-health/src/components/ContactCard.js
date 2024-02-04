@@ -16,9 +16,13 @@ function ContactCard() {
               <input type="text" placeholder="First Name" className="styled-input"/>
               <input type="text" placeholder="Last Name" className="styled-input"/>
             </div>
-            <input type="text" placeholder="Email" className="styled-input"/>
+            <div className='horizontal-input'>
+              <input type="text" placeholder="Email" className="styled-input"/>
+            </div>
 
-            <textarea type="text" placeholder="Message" className="styled-input large-input"/>
+            <div className='horizontal-input'>
+              <textarea type="text" placeholder="Message" className="styled-input large-input"/>
+            </div>
           </div>
 
           <div className='horizontal'>

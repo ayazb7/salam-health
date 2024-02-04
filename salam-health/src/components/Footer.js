@@ -17,7 +17,9 @@ function Footer() {
     <nav className="footer">
       <div className='horizontal-stretched'>
         <div className='vertical-center'>
-            <img src={LogoImage} className='footer-logo'/>
+            <a href='/' className='footer-logo'>
+              <img src={LogoImage}/>
+            </a>
 
             <p className='white-text center'>Unlock your body's natural <br></br> healing.</p>
 
