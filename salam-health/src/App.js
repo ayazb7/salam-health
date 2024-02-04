@@ -4,7 +4,8 @@ import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
 import Book from './components/Book';
-import Navbar from './components/Navbar'; // Import your new Navbar component
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import LogoImage from './images/logo-with-text.png';
 import './App.css';
 
@@ -53,6 +54,8 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/book" element={<Book />} />
           </Routes>
+
+         <Footer /> 
       </div>
     </Router>
   );
