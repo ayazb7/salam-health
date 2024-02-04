@@ -381,6 +381,7 @@ h4, h3, h2, p {
   justify-content: center;
   z-index: 1;
   position: relative;
+  margin-bottom: 60vh;
 }
 
 .top-padding-1 {
@@ -754,10 +755,8 @@ h4, h3, h2, p {
   margin-right: auto;
   margin-left: 20px;
   margin-bottom: 10px;
- 
-  
-  
 }
+
 .card-price {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -790,7 +789,7 @@ h4, h3, h2, p {
   display: flex;
   position: absolute; 
   z-index: 2; 
-  top: 80%;
+  top: 45%;
 }
 
 .contact-card h4 {
