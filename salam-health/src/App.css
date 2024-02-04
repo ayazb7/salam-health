@@ -3,6 +3,8 @@
 .App {
   text-align: center;
   background-color: #06002a;
+  align-items: center;
+  justify-content: center;
 }
 
 .App-logo {
@@ -68,10 +70,12 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-/* .main-content {
-  height: 100%;
-  padding-bottom: 2.5rem;
-} */
+.main-content {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
 
 .navbar {
   position: fixed;
@@ -84,16 +88,26 @@ body {
   display: flex;
   justify-content: space-between; /* Aligns all items on the main axis to the center */
   align-items: center;
-  margin: 10px;
-  margin-top: 10px;
   animation: slideDown 0.5s ease forwards;
+  padding: 10px;
 }
 
-p{
+p {
   font-family: Poppins;
   color: black;
   position: relative;
-  font-size: large;
+}
+
+h3 {
+  font-family: Poppins;
+}
+
+h2 {
+  font-family: Poppins;
+}
+
+.center {
+  text-align: center;
 }
 
 .titles{
@@ -182,7 +196,7 @@ p{
   display: inline-block; /* Allows width and height to be set */
   padding: 0.5rem 1.25rem;
   border-radius: 30px; /* Rounded corners */
-  background-color: #007bff; /* A shade of blue */
+  background-color: #2AA0C5; /* A shade of blue */
   color: white; /* Text color */
   text-decoration: none; /* Removes underline */
   transition: background-color 0.3s ease; /* Smooth background color transition */
@@ -196,7 +210,29 @@ p{
 }
 
 .book-now:hover {
-  background-color: #0056b3; /* Darker shade of blue on hover */
+  background-color: #2588A7; /* Darker shade of blue on hover */
+}
+
+.book-now-large {
+  display: inline-block; 
+  padding: 0.75rem 2rem;
+  border-radius: 30px; 
+  background-color: #2AA0C5; 
+  color: white; 
+  text-decoration: none; 
+  transition: background-color 0.3s ease; 
+  border: none;
+  outline: none; 
+  cursor: pointer; 
+  text-align: center; 
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.book-now-large:hover {
+  background-color: #2588A7; /* Darker shade of blue on hover */
 }
 
 
@@ -207,15 +243,16 @@ p{
 
 /* App.css or your custom CSS file */
 .home-background {
+  position: relative;
   align-items: center;
   justify-content: center;
   text-align: center;
   color:white;
   font-family: 'Gilroy', sans-serif; 
-  line-height: 20px;
   font-size: 50px;
   height: 100%;
-  padding-bottom: 3.5rem;
+  width: 100%;
+  gap: 1px;
 }
 
 .hidden {
@@ -257,22 +294,82 @@ p{
 }
 
 .centered-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100%;
-  width: 100%;
+  height: 85vh;
+  width: 100vw;
   font-family: 'Poppins', sans-serif;
+}
+
+.blue {
+  background-color: #2AA0C5;
+}
+
+.rectangle-fw {
+  width: 100vw;
+  padding-top: 2rem;
+  padding-bottom: 10rem;
+}
+
+.top-padding-1 {
+  padding-top: 1rem;
+}
+
+.top-padding-3 {
+  padding-top: 3rem;
+}
+
+.bot-padding-12 {
+  padding-bottom: 12rem;
+}
+
+.vertical-top-padding {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.vertical-bottom-padding {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
 }
 
 .vertical-start {
   justify-content: start;
   align-items: start;
   text-align: start;
-  position: relative;
-  left: -15%;
-  top: 5rem;
+}
+
+.horizontal-start {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  text-align: start;
+  gap: 20px;
+}
+
+.horizontal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.less-gap {
+  gap: 0px;
+}
+
+.more-gap {
+  gap: 3.5rem;
 }
 
 .home-text {
@@ -284,14 +381,25 @@ p{
 .home-text h3 {
   font-weight: 600;
   color: black;
+  font-size: 48px;
 }
 
 .home-descriptions {
   justify-content: start;
   align-items: start;
   text-align: start;
-  font-weight: 500;
-  gap: -2px;
+  gap: -4px;
+}
+
+.home-descriptions p {
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.small-text p {
+  font-size: 16px;
+  font-weight: 300;
+  top: 30px;
 }
 
 /* Remove the bottom margin from the last item to avoid extra space at the bottom */
@@ -325,18 +433,44 @@ p{
   margin: 0 50px;
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.5); /* Example shadow */
 }
-.cuppingImage,
-.dotsImage
-.plus-image1,
-.plus-imagetop{
+
+.plus-imagetop {
   position: absolute;
-  top: 0; /* Adjust top position if needed */
+  z-index: -1;
 }
 
-.cuppingImage{
-  z-index: 1;
-  top: 38%;
-  right: 21%;
+.plus-imagebot {
+  position: absolute;
+  z-index: -1;
+}
+
+.dots {
+  position: absolute;
+  z-index: -1;
+}
+
+.group-dots {
+  position: absolute;
+  z-index: -1;
+}
+
+.dots {
+  bottom: 20%;
+  right: 26%;
+}
+
+.plus-imagetop{
+  right: 15%; /* Adjust left position if needed */
+  top: 15%;
+}
+
+.plus-imagebot {
+  left: 5%; 
+  bottom: 10%
+}
+
+.group-dots {
+  left: 20%;
 }
 
 .overlay {
@@ -363,21 +497,74 @@ p{
   opacity: 6%;
 }
 
-.dotsImage{
-  top: 50%;
-  right: 35%;
+.learn-more {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.plus-image1 {
-  left:13%; /* Adjust left position if needed */
-  top: 155%;
+.learn-more:hover p {
+  cursor: pointer;
+  color: #336474;
 }
 
-.plus-imagetop{
-  right:12%; /* Adjust left position if needed */
-  top: 36%;
+.learn-more:hover .circle {
+  cursor: pointer;
+  background-color: #336474; /* New background color for the circle on hover */
 }
 
+.learn-more p {
+  font-weight: 600;
+  font-size: 24px;
+  color: #529FB7;
+  transition: color 0.3s; /* Smooth transition for text color */
+}
+
+.circle {
+  border-radius: 50%;
+  background-color: #529FB7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.testimonial-title {
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 40px;
+  color: white;
+}
+
+.testimonial-text {
+  color: white;
+  font-size: 25px;
+  font-weight: 400;
+  padding: 0 3rem;
+  text-align: center;
+}
+
+.testimonial-name {
+  color: white;
+  font-size: 26px;
+  font-weight: 500;
+  padding: 0 3rem;
+  text-align: center;
+}
+
+.small-button {
+  border-radius: 15px;
+  background-color: #69B8D1;
+  padding: 0 1.5rem;
+  transition: background-color 0.3s ease; 
+}
+
+.small-button:hover {
+  cursor: pointer;
+  background-color: #336474;
+}
 
 .book-now-button {
   display: inline-block; /* Allows width and height to be set */
@@ -387,7 +574,7 @@ p{
   padding-bottom: 5px;
   margin: 40px;
   border-radius: 30px; /* Rounded corners */
-  background-color: #007bff; /* A shade of blue */
+  background-color: #529FB7; /* A shade of blue */
   color: white; /* Text color */
   text-decoration: none; /* Removes underline */
   transition: background-color 0.3s ease; /* Smooth background color transition */
@@ -396,7 +583,7 @@ p{
 }
 
 .book-now-button:hover {
-  background-color: #0056b3; /* Darker shade of blue on hover */
+  background-color: #336474; /* Darker shade of blue on hover */
   cursor: pointer;
 }
 
@@ -414,7 +601,7 @@ p{
   padding-left: 15px;
   padding-right: 15px;
   border-radius: 30px;
-  background-color: #007bff;
+  background-color: #529FB7;
   color: white;
   text-decoration: none;
   /* transition: background-color 0.3s ease; */
@@ -422,7 +609,7 @@ p{
 }
 
 .book-now-link:hover {
-  background-color: #0056b3;
+  background-color: #336474;
   transform: none; /* Disable any transformations on hover */
   cursor: pointer;
 }

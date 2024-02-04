@@ -46,25 +46,13 @@ function App() {
     <Router>
       <div>
         <Navbar />
-        {/* <nav className="navbar">
-          <img src={LogoImage} alt="Logo" className="logo"/>
-          
-          <div className="nav-item-right">
-            <a href="/contact">Contact</a>
-            <button className="book-now" onClick={handleButtonClick}>
-              Book Now
-            </button>
-          </div>
-        </nav> */}
 
-        <div className="main-content">
-          <Routes>
+        <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/book" element={<Book />} />
           </Routes>
-        </div>
       </div>
     </Router>
   );
