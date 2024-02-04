@@ -40,16 +40,13 @@ function Book() {
             tailored to optimize your experience, at an affordable price.
         </p>
         <h3 className="book-description2">Stand Alone Treatments</h3>
-        <p className="packages-text">
-        </p>
-        <section className="cards-list">
-              <Card className="cards" title= "Hijamah Wet Cupping" description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63" duration="45 min"/>
-              <Card className="cards" title= "Hijamah Wet Cupping" description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63" duration="45 min"/>
-              <Card className="cards" title= "Hijamah Wet Cupping" description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63" duration="45 min"/>
-         </section>  
     </div>
-
     <div className='centered-container hidden'>
+    <section className="cards-list">
+              <Card className="cards" title= "Hijamah Wet Cupping" description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63" duration="45 min"/>
+              <Card className="cards" title= "Hijamah Wet Cupping" description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63" duration="45 min"/>
+              <Card className="cards" title= "Hijamah Wet Cupping" description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63" duration="45 min"/>
+         </section> 
     </div>
 </div>
   );
