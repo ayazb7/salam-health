@@ -1,6 +1,7 @@
 // Book.js
 
 import React, { useState, useEffect } from 'react';
+import Card from './Card'
 
 function Book() {
     const [startAnimation, setStartAnimation] = useState(false);
@@ -49,7 +50,18 @@ function Book() {
                     </React.Fragment>
                     ))}
                 </p>
+                
          </div>
+         <section className="cards-list">
+              <Card className="cards" title= "Hijamah Wet Cupping" description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63"/>
+              <Card className="cards" title= "Hijamah Wet Cupping" description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63"/>
+              <Card className="cards" title= "Hijamah Wet Cupping" description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63"/>
+              
+         </section>
+            
+         
+         
+         
     </div>
   );
 }

@@ -6,13 +6,17 @@ export default function Card(props){
 
 
     return(
-            <div>
-                <h2>{props.title}</h2>
-                <p>{props.description}</p>
-                <p><span className="bold">£{props.price}</span></p>
-                <button className="book-now-card" onClick={handleButtonClick}>
-                     Book Now
-                </button>
+            <div className="booking-cards">
+                <h4 className="card-title">{props.title}</h4>
+                <p className="card-description">{props.description}</p>
+                <div className="card-footer">
+                    <span className="card-price">£ {props.price}</span>
+                    <span>
+                        <button className="book-now-card" onClick={handleButtonClick}>
+                            Book Now
+                        </button>
+                    </span>
+                </div>
             </div>
     )
 }

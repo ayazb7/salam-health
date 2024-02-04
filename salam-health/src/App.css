@@ -622,3 +622,98 @@ h2 {
   }
 
 }
+.card-title{
+  
+  margin-top: 115px;
+  
+  margin-right: auto;
+  margin-bottom: 0px;
+ 
+  font-size: 24px;
+  color: #FCF9F9;
+}
+.booking-cards{
+
+    display: flex;
+    flex-direction: column;
+    width: 371px;
+    height: 349px;
+    background-color: #012D61;
+    padding-left: 32px;  
+}
+.card-description{
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 30px;
+  max-width: 280px;
+  font-size: 14px;
+  text-align: left;
+  color: #FCF9F9;
+}
+.book-now-card{
+  width: 144px;
+  height: 27px;
+  border-radius: 0px;
+  box-sizing: border-box;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  margin-left: 140px;
+  margin-right: 32px;
+  color: #10217D;
+  font-size: 16px;
+  background-color: #FFFFFF;
+  
+}
+.card-price{
+  margin-right: auto;
+  font-size: 24px;
+  color: #FCF9F9;
+}
+.card-footer{
+
+  margin-right: auto;
+}
+
+
+
+
+
+
+.book-now-card:hover {
+  background-color: #F3F4F6;
+  text-decoration: none;
+  transition-duration: 0.1s;
+  cursor: pointer;
+}
+
+.book-now-card:disabled {
+  background-color: #FAFBFC;
+  border-color: rgba(27, 31, 35, 0.15);
+  color: #959DA5;
+  cursor: default;
+}
+
+.book-now-card:active {
+  background-color: #EDEFF2;
+  box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+  transition: none 0s;
+}
+
+.book-now-card:focus {
+  outline: 1px transparent;
+}
+
+.book-now-card:before {
+  display: none;
+}
+
+.book-now-card:-webkit-details-marker {
+  display: none;
+}
+.cards-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+  padding-left: 90px ;
+}
