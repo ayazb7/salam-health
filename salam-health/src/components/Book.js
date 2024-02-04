@@ -53,12 +53,12 @@ function Book() {
                 
          </div>
          <section className="cards-list">
-              <Card className="cards" title= "Hijamah Wet Cupping" description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63"/>
-              <Card className="cards" title= "Hijamah Wet Cupping" description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63"/>
-              <Card className="cards" title= "Hijamah Wet Cupping" description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63"/>
+              <Card className="cards" title= "Hijamah Wet Cupping" description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63" duration="45 min"/>
+              <Card className="cards" title= "Hijamah Wet Cupping" description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63" duration="45 min"/>
+              <Card className="cards" title= "Hijamah Wet Cupping" description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63" duration="45 min"/>
               
          </section>
-            
+             
          
          
          

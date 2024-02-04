@@ -1,3 +1,6 @@
+import React from "react";
+import CardImage from '../images/CardImage.png';
+
 export default function Card(props){
     const handleButtonClick = () =>{
         // do nothing fo now
@@ -7,16 +10,14 @@ export default function Card(props){
 
     return(
             <div className="booking-cards">
-                <h4 className="card-title">{props.title}</h4>
+                <img className="card-img" src={CardImage} alt="the card therapy image" />
+                <h3 className="card-title">{props.title}</h3>
                 <p className="card-description">{props.description}</p>
-                <div className="card-footer">
-                    <span className="card-price">£ {props.price}</span>
-                    <span>
-                        <button className="book-now-card" onClick={handleButtonClick}>
+                <p className="card-price">£ {props.price}</p>
+                <p className="card-duration">{props.duration}</p>
+                <button className="book-now-card" onClick={handleButtonClick}>
                             Book Now
-                        </button>
-                    </span>
-                </div>
+                 </button>
             </div>
     )
 }
