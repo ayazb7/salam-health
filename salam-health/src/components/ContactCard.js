@@ -3,6 +3,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import contactImage from '../images/contact-image.png';
 import arrow_right from '../images/chevron-right.png';
+import phone from '../images/phone.png';
 
 function ContactCard() {
 
@@ -22,16 +23,12 @@ function ContactCard() {
 
           <div className='horizontal'>
             <button className="send-message">
-              Get Started
-              <div className='circle'>
-                <img src={arrow_right}/>
-              </div>
+              Send message
+              <img src={arrow_right}/>
             </button>
 
-            <button className="send-message">
-              <div className='circle'>
-                <img src={arrow_right}/>
-              </div>
+            <button className="circle-button">
+              <img src={phone}/>
             </button>
           </div>
         </div>
