@@ -1,6 +1,6 @@
 // Navbar.js
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import LogoImage from '../images/full_logo.png';
 
 function Navbar() {
@@ -12,7 +12,9 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <img src={LogoImage} alt="Logo" className="logo"/>
+      <Link to="/" className='logo'>
+        <img src={LogoImage} alt="Logo"/>
+      </Link>
       
       <div className="nav-item-right">
         <a href="/contact">Contact</a>

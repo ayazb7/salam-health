@@ -115,7 +115,8 @@ body {
 .footer-item {
   color: white;
   font-size: 16px;
-  line-height: 0px;
+  text-decoration: none;
+  margin-bottom: 2px;
 }
 
 .footer-item:hover {
@@ -129,6 +130,25 @@ body {
   align-items: start;
   text-align: start;
   gap: 2px;
+}
+
+.footer-info-item {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  gap: 6px;
+  margin-bottom: 4px;
+}
+
+.footer-info-item img {
+  align-self: flex-start; 
+  margin-top: 3px;
+}
+
+.footer-info-item p {
+  color: white;
+  font-size: 16px;
+  margin: 0;
 }
 
 .horizontal-stretched {
@@ -184,10 +204,10 @@ h4, h3, h2, p {
   margin-right: 3.5rem;
 }
 
-.logo {
+.logo img {
   height: auto;
-  width: 12%;
-  margin-left: 3.5rem;
+  width: 80%;
+  cursor: pointer;
 }
 
 .nav-brand {
