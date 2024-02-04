@@ -29,40 +29,29 @@ function Book() {
       clearTimeout(timer);
       observer.disconnect();
     };
-  }, []); // Empty dependency array ensures this effect runs once after initial render
+  }, []); 
 
-  const textLines = [
-    "Holistic well-being through our integrated therapy packages.",
-    "Address various aspects of health with bundled therapies. Optimize",    
-    "your experience for comprehensive care beyond isolated symptoms.",
-    "Enjoy the convenience of accessing multiple therapies in one place.",
-    "All at an affordable price."
-  ]; 
   return (
     <div className={`home-background ${startAnimation ? 'start-animation' : 'initial-hidden'}`}>
-        <div className="centered-container hidden">
-             <h3 className="home-description">Packages</h3>
-                <p className="packages-text">
-                {textLines.map((line, index) => (
-                    <React.Fragment key={index}>
-                        {line}
-                        <br />
-                    </React.Fragment>
-                    ))}
-                </p>
-                
-         </div>
-         <section className="cards-list">
-              <Card className="cards" title= "Hijamah Wet Cupping" description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63"/>
-              <Card className="cards" title= "Hijamah Wet Cupping" description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63"/>
-              <Card className="cards" title= "Hijamah Wet Cupping" description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63"/>
-              
+    <div className="centered-container hidden">
+        <h3 className="book-description">Our Treatments</h3>
+        <p className='bookText'>
+            Take a look at our wide range of treatments and packages, specially <br></br>
+            tailored to optimize your experience, at an affordable price.
+        </p>
+        <h3 className="book-description2">Stand Alone Treatments</h3>
+        <p className="packages-text">
+        </p>
+        <section className="cards-list">
+              <Card className="cards" title= "Hijamah Wet Cupping" description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63" duration="45 min"/>
+              <Card className="cards" title= "Hijamah Wet Cupping" description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63" duration="45 min"/>
+              <Card className="cards" title= "Hijamah Wet Cupping" description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63" duration="45 min"/>
          </section>
-            
-         
-         
-         
     </div>
+
+    <div className='centered-container hidden'>
+    </div>
+</div>
   );
 }
 
