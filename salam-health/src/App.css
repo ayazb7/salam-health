@@ -366,6 +366,11 @@ h4, h3, h2, p {
   width: 20%;
 }
 
+.bookText{
+  font-family: Poppins;
+  font-size: 30px;
+}
+
 .centered-container-no-height {
   position: relative;
   display: flex;
@@ -482,6 +487,23 @@ h4, h3, h2, p {
   font-weight: 600;
   color: black;
   font-size: 48px;
+}
+
+.book-description{
+  margin-top: 200px;
+  font-size: 50px;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  margin-bottom: -18px
+}
+
+.book-description2{
+  font-size: 40px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  margin-top: 60px;
+  color: black;
+  margin-bottom: -66px;
 }
 
 .home-descriptions {
@@ -775,6 +797,9 @@ h4, h3, h2, p {
   margin-right: auto;
   margin-left: 20px;
   margin-bottom: 10px;
+ 
+  
+  
 }
 
 .card-price {
@@ -809,6 +834,7 @@ h4, h3, h2, p {
   display: flex;
   position: absolute; 
   z-index: 2; 
+  top: 80%;
   top: 45%;
 }
 
