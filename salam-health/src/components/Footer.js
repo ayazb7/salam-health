@@ -8,11 +8,7 @@ import whatsapp from '../images/whatsapp.png';
 import twitter from '../images/twitter.png';
 
 function Footer() {
-  const navigate = useNavigate(); // Initialize the navigate function here
-
-  const handleButtonClick = () => {
-    navigate('/book'); // Navigate to /book when the button is clicked
-  };
+  const navigate = useNavigate(); 
 
   return (
     <nav className="footer">

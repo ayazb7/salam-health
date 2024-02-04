@@ -14,6 +14,7 @@ import rest from '../images/rest.png';
 import arrow_narrow_left from '../images/arrow-narrow-left.png';
 import arrow_narrow_right from '../images/arrow-narrow-right.png';
 import group_dots from '../images/dots-group.png';
+import ContactCard from './ContactCard';
 
 const Home = () => {
   const [startAnimation, setStartAnimation] = useState(false);
@@ -51,17 +52,11 @@ const Home = () => {
         <img src={dots} className="dots hidden"/>
         <div className='horizontal'>
           <div className='vertical-start'>
-            <div className='home-text'>
-              <h3>
-                Specialised Therapeutic <br></br> Treatments
-              </h3>
-              {/* <h3>
-                Treatments
-              </h3> */}
-            </div>
-            <div className='home-descriptions'>
-              <p>We offer a wide range of treatments and<br></br>packages based on natural therapies and<br></br>holistic healing.</p>
-            </div>
+            <h3 className='home-text'>
+              Specialised Therapeutic <br></br> Treatments
+            </h3>
+
+            <p className='home-descriptions'>We offer a wide range of treatments and<br></br>packages based on natural therapies and<br></br>holistic healing.</p>
 
             <div className='learn-more'>
               <p>Learn More</p>
@@ -92,19 +87,13 @@ const Home = () => {
 
 
           <div className='vertical-start'>
-            <div className='small-text'>
-              <p>HOW TO GET STARTED</p>
-            </div>
+            <p className='small-text'>HOW TO GET STARTED</p>
 
-            <div className='home-text'>
-              <h3>
-                Simple step by step<br></br>guide
-              </h3>
-            </div>
+            <h3 className='home-text'>
+              Simple step by step<br></br>guide
+            </h3>
 
-            <div className='home-descriptions'>
-              <p>Follow our simple process to get the best<br></br>treatment as soon as possible.</p>
-            </div>
+            <p className='home-descriptions'>Follow our simple process to get the best<br></br>treatment as soon as possible.</p>
 
             <div className='horizontal-start top-padding-1'>
               <button className="book-now-large">
@@ -122,7 +111,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className='centered-container hidden'>
+      <div className='centered-container-no-height hidden'>
         <div className='rectangle-fw blue'> 
           <p className='center testimonial-title'>
             TESTIMONIALS
@@ -146,8 +135,11 @@ const Home = () => {
             </div>
           </div>
         </div>
+
+        <ContactCard/>
       </div>
 
+      
   
       {/* <div className="overlay"></div>
       <div className="overlay2"></div> */}
