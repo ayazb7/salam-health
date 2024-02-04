@@ -24,10 +24,18 @@ function Footer() {
             <p className='white-text center'>Unlock your body's natural <br></br> healing.</p>
 
             <div className='horizontal'>
-                <img src={instagram} className='social-media-footer'/>
-                <img src={facebook} className='social-media-footer'/>
-                <img src={whatsapp} className='social-media-footer'/>
-                <img src={twitter} className='social-media-footer'/>
+                <a href='https://www.instagram.com/salamhealth.co' target="_blank" rel="noopener noreferrer" className='social-media-footer'>
+                  <img src={instagram} alt="Instagram" className='social-media-footer'/>
+                </a>
+                <a href='https://www.facebook.com/' target="_blank" rel="noopener noreferrer" className='social-media-footer'>
+                  <img src={facebook} alt="Facebook" className='social-media-footer'/>
+                </a>
+                <a href='https://www.whatsapp.com/' target="_blank" rel="noopener noreferrer" className='social-media-footer'>
+                  <img src={whatsapp} alt="Whatsapp" className='social-media-footer'/>
+                </a>
+                <a href='https://twitter.com/' target="_blank" rel="noopener noreferrer" className='social-media-footer'>
+                  <img src={twitter} alt="Twitter" className='social-media-footer'/>
+                </a>
             </div>
         </div>
 
