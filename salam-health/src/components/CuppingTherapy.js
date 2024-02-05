@@ -35,7 +35,7 @@ const Home = () => {
 
   return (
     <div className={`home-background ${startAnimation ? 'start-animation' : 'initial-hidden'}`}>
-      <div className="centered-container-no-height hidden top-margin-1">
+      <div className="centered-container-no-height hidden top-margin-3">
         <div className='vertical-center'>
             <h3 className='home-text less-gap-1'>
               Cupping Therapy

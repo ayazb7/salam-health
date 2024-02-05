@@ -1,7 +1,7 @@
 // Book.js
 
 import React, { useState, useEffect } from 'react';
-import Card from './Card'
+import BookingCard from './BookingCard'
 import FAQ from './FAQ.js';
 import CuppingTherapy from '../images/cupping-therapy.png';
 
@@ -35,7 +35,7 @@ function Book() {
 
   return (
     <div className={`home-background ${startAnimation ? 'start-animation' : 'initial-hidden'}`}>
-      <div className="centered-container-no-height hidden top-margin-1 bottom-marging-1">
+      <div className="centered-container-no-height hidden top-margin-3 bottom-marging-1">
           <h3 className="home-text less-gap-1">Our Treatments</h3>
           <p className='sub-text'>
               Take a look at our wide range of treatments and packages, specially tailored to optimize your experience, at an affordable price.
@@ -43,9 +43,9 @@ function Book() {
           <h3 className="home-text" style={{ fontSize: '32px'}}>Stand Alone Treatments</h3>
 
           <div className='horizontal more-gap' style={{ alignItems: 'stretch'}}>
-            <Card className="cards" title= "Hijamah Wet Cupping" image={CuppingTherapy} description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63" duration="45 min"/>
-            <Card className="cards" title= "Hijamah Wet Cupping" image={CuppingTherapy} description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63" duration="45 min"/>
-            <Card className="cards" title= "Hijamah Wet Cupping" image={CuppingTherapy} description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63" duration="45 min"/>
+            <BookingCard className="cards" title= "Hijamah Wet Cupping" image={CuppingTherapy} description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63" duration="45 min"/>
+            <BookingCard className="cards" title= "Hijamah Wet Cupping" image={CuppingTherapy} description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63" duration="45 min"/>
+            <BookingCard className="cards" title= "Hijamah Wet Cupping" image={CuppingTherapy} description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63" duration="45 min"/>
           </div>
       </div>
 
@@ -59,9 +59,9 @@ function Book() {
           </p>
 
           <div className='horizontal more-gap' style={{ alignItems: 'stretch'}}>
-            <Card className="cards" title= "Hijamah Wet Cupping" image={CuppingTherapy} description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63" duration="45 min"/>
-            <Card className="cards" title= "Hijamah Wet Cupping" image={CuppingTherapy} description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63" duration="45 min"/>
-            <Card className="cards" title= "Hijamah Wet Cupping" image={CuppingTherapy} description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63" duration="45 min"/>
+            <BookingCard className="cards" title= "Hijamah Wet Cupping" image={CuppingTherapy} description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63" duration="45 min"/>
+            <BookingCard className="cards" title= "Hijamah Wet Cupping" image={CuppingTherapy} description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63" duration="45 min"/>
+            <BookingCard className="cards" title= "Hijamah Wet Cupping" image={CuppingTherapy} description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63" duration="45 min"/>
           </div>
         </div>
 

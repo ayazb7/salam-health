@@ -90,6 +90,7 @@ body {
   z-index: 1000;
   transition: background-color 0.3s ease;
   backdrop-filter: blur(5px);
+  /* background-color: white; */
   display: flex;
   justify-content: space-between; /* Aligns all items on the main axis to the center */
   align-items: center;
@@ -160,6 +161,7 @@ body {
   align-items: start;
   justify-content: space-around;
   width: 90vw;
+  max-width: 1680px;
   overflow-x: hidden;
 }
 
@@ -359,6 +361,7 @@ h4, h3, h2, p {
 .logo {
   height: auto;
   width: 12%;
+  max-width: 250px;
   margin-left: 1.5rem;
 }
 
@@ -484,6 +487,7 @@ h4, h3, h2, p {
   align-items: center;
   justify-content: center;
   gap: 20px;
+  max-width: 1440px;
 }
 
 .less-gap-1 {
@@ -506,6 +510,10 @@ h4, h3, h2, p {
 
 .top-margin-1 {
   margin-top: 2.5rem;
+}
+
+.top-margin-3 {
+  margin-top: 4rem;
 }
 
 .bottom-marging-1 {
@@ -736,6 +744,7 @@ h4, h3, h2, p {
 .testimonial-text {
   color: white;
   width: 75%;
+  max-width: 1440px;
   font-size: 20px;
   font-weight: 400;
   padding: 0 3rem;
@@ -989,6 +998,7 @@ h4, h3, h2, p {
   background-color: white;
   box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.2);
   width: 75vw;
+  max-width: 1280px;
   color: black;
   display: flex;
   position: absolute; 
@@ -1006,6 +1016,7 @@ h4, h3, h2, p {
   flex-direction: column;
   gap: 1rem;
   width: 30vw;
+  max-width: 500px;
 }
 
 .styled-input {
@@ -1060,6 +1071,7 @@ h4, h3, h2, p {
 
 .contact-image {
   width: 30vw;
+  max-width: 500px;
   margin-left: auto; 
   overflow: hidden;
   border-radius: 0 20px 20px 0;
