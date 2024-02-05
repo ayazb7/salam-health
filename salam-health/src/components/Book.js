@@ -62,7 +62,7 @@ function Book() {
               <Card className="cards" title= "Lite Detox" description="The exact cause of most types of diabetes is unknown. In all cases, sugar builds up in the bloodstream. " price="63" duration="45 min"/>
               <Card className="cards" title= "Sports Massage" description="The exact cause of most types of diabetes is unknown. In all cases, sugar builds up in the bloodstream. " price="63" duration="45 min"/>
               <Card className="cards" title= "Active Cupping" description="The exact cause of most types of diabetes is unknown. In all cases, sugar builds up in the bloodstream. " price="63" duration="45 min"/>
-         </section> 
+      </section> 
     </div>
     <FAQ/>
     </div>
