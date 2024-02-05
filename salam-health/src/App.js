@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Link, Routes, useNavigate } from 'react-router-dom';
+import LandingPage from './components/LandingPage';
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
@@ -47,17 +48,18 @@ function App() {
   return (
     <Router>
       <div>
-        <Navbar />
+        {/* <Navbar /> */}
 
         <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/book" element={<Book />} />
             <Route path="/cupping-therapy" element={<CuppingTherapy />} />
           </Routes>
 
-         <Footer /> 
+         {/* <Footer />  */}
       </div>
     </Router>
   );

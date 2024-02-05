@@ -66,6 +66,35 @@ a {
   }
 }
 
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.testimonial-slide-right {
+  animation: slideInFromRight 0.5s forwards;
+}
+
+.testimonial-slide-left {
+  animation: slideInFromLeft 0.5s forwards;
+}
 
 body {
   background-color: #ffffff; /* Set the background color for the entire website */
@@ -90,6 +119,7 @@ body {
   z-index: 1000;
   transition: background-color 0.3s ease;
   backdrop-filter: blur(5px);
+  /* background-color: white; */
   display: flex;
   justify-content: space-between; /* Aligns all items on the main axis to the center */
   align-items: center;
@@ -160,6 +190,7 @@ body {
   align-items: start;
   justify-content: space-around;
   width: 90vw;
+  max-width: 1680px;
   overflow-x: hidden;
 }
 
@@ -359,6 +390,7 @@ h4, h3, h2, p {
 .logo {
   height: auto;
   width: 12%;
+  max-width: 250px;
   margin-left: 1.5rem;
 }
 
@@ -412,15 +444,28 @@ h4, h3, h2, p {
 
 .rectangle-fw {
   width: 100vw;
+  height: 40vh;
   padding-top: 2rem;
-  padding-bottom: 10rem; /* May need adjustment */
+  padding-bottom: 10rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   z-index: 1;
   position: relative;
   margin-bottom: 60vh;
+}
+
+.testimonial-wrapper {
+  /* Adjust if needed, ensure it doesn't take full height */
+}
+
+.button-wrapper {
+  position: relative;
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .top-padding-1 {
@@ -484,6 +529,7 @@ h4, h3, h2, p {
   align-items: center;
   justify-content: center;
   gap: 20px;
+  max-width: 1440px;
 }
 
 .less-gap-1 {
@@ -506,6 +552,10 @@ h4, h3, h2, p {
 
 .top-margin-1 {
   margin-top: 2.5rem;
+}
+
+.top-margin-3 {
+  margin-top: 4rem;
 }
 
 .bottom-marging-1 {
@@ -733,12 +783,26 @@ h4, h3, h2, p {
   color: white;
 }
 
+.testimonial-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.testimonial-text, .testimonial-name {
+  width: 75%;
+  max-width: 1440px;
+  padding: 0 3rem;
+  margin: 0 auto; /* Centering horizontally */
+}
+
 .testimonial-text {
   color: white;
-  width: 75%;
   font-size: 20px;
   font-weight: 400;
-  padding: 0 3rem;
   text-align: center;
 }
 
@@ -746,10 +810,8 @@ h4, h3, h2, p {
   color: white;
   font-size: 26px;
   font-weight: 500;
-  padding: 0 3rem;
   text-align: center;
 }
-
 .small-button {
   border-radius: 15px;
   background-color: #69B8D1;
@@ -989,6 +1051,7 @@ h4, h3, h2, p {
   background-color: white;
   box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.2);
   width: 75vw;
+  max-width: 1280px;
   color: black;
   display: flex;
   position: absolute; 
@@ -1006,6 +1069,7 @@ h4, h3, h2, p {
   flex-direction: column;
   gap: 1rem;
   width: 30vw;
+  max-width: 500px;
 }
 
 .styled-input {
@@ -1060,6 +1124,7 @@ h4, h3, h2, p {
 
 .contact-image {
   width: 30vw;
+  max-width: 500px;
   margin-left: auto; 
   overflow: hidden;
   border-radius: 0 20px 20px 0;
@@ -1101,20 +1166,29 @@ h4, h3, h2, p {
 }
 
 .circle-button {
-  border-radius: 50%; 
-  height: 65px;
-  width: 65px;
-  background-color: #2AA0C5; 
-  color: white; 
-  text-decoration: none; 
-  transition: background-color 0.3s ease; 
-  border: none;
-  outline: none; 
-  cursor: pointer; 
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 5px;
+  border-radius: 50%; 
+  height: 65px;
+  width: 65px;
+  background-color: #2AA0C5;
+  text-decoration: none; 
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.circle-button button {
+  border: none;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  outline: none;
 }
 
 .circle-button:hover {

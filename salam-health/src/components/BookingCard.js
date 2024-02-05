@@ -3,14 +3,13 @@ import CardImage from '../images/CardImage.png';
 import arrow_right from '../images/chevron-right.png';
 
 export default function Card(props){
-    const handleButtonClick = () =>{
-        // do nothing fo now
-        console.log("pressed book button");
-    }
+    const handleButtonClick = () => {
+        window.open('https://www.fresha.com/a/salam-health-southampton-uk-19-oxford-street-khby691r?_gl=1*1xc7coa*_ga*MTgzNTI0NTc3OS4xNzA2Nzg4OTc4*_ga_SMQNG7NE8C*MTcwNjk3NTE1My41LjEuMTcwNjk3OTkzOS40My4wLjA.&pId=973826', '_blank');
+    };
+    
     const learnMoreClick = () =>{
         console.log("clicked learn more")
     }
-
 
     return(
         <div className="treatment-card" style={{ alignI: 'start' }}>
@@ -29,7 +28,7 @@ export default function Card(props){
                     Book
                 </button>
 
-                <div className='learn-more' style={{ gap: '5px'}}>
+                <div className='learn-more' style={{ justifyContent: 'space-around', width: '8.5rem' }}>
                     <p style={{ fontWeight: '600', fontSize: '16px' }}>Learn More</p>
                     <div className='circle' style={{ width: '30px', height: '30px' }}>
                         <img src={arrow_right} style={{ width: '25px', height: '25px' }}/>
