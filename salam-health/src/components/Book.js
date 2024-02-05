@@ -43,9 +43,9 @@ function Book() {
           <h3 className="home-text" style={{ fontSize: '32px'}}>Stand Alone Treatments</h3>
 
           <div className='horizontal more-gap' style={{ alignItems: 'stretch'}}>
-            <Card className="cards" title= "Hijamah Wet Cupping" image={CuppingTherapy} description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63" duration="45 min"/>
-            <Card className="cards" title= "Hijamah Wet Cupping" image={CuppingTherapy} description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63" duration="45 min"/>
-            <Card className="cards" title= "Hijamah Wet Cupping" image={CuppingTherapy} description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63" duration="45 min"/>
+            <Card className="cards" title= "Sports Massage" image={CuppingTherapy} description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="30" duration="30 min"/>
+            <Card className="cards" title= "Active Cupping" image={CuppingTherapy} description="Strategic placement of suction cups on specific areas to stimulate blood circulation, promote lymphatic drainage, and enhance overall well-being. The gentle suction created by the cups helps release muscle tension, relieve pain, and improve flexibility. With the skilled practitioners at Salam Health ensuring a safe and comfortable session, clients can enjoy the invigorating benefits of Active Cupping Therapy for a renewed sense of vitality and improved physical wellness." price="30" duration="30 min"/>
+            <Card className="cards" title= "Hijamah Wet Cupping" image={CuppingTherapy} description="This therapy stimulates blood circulation, removes toxins, relieves muscle tension, boosts the immune system, and promotes mental well-being. With highly trained professionals ensuring a safe and sterile environment, clients can trust in the effectiveness and quality of the treatment." price="45" duration="45 min"/>
           </div>
       </div>
 
@@ -59,9 +59,9 @@ function Book() {
           </p>
 
           <div className='horizontal more-gap' style={{ alignItems: 'stretch'}}>
-            <Card className="cards" title= "Hijamah Wet Cupping" image={CuppingTherapy} description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63" duration="45 min"/>
-            <Card className="cards" title= "Hijamah Wet Cupping" image={CuppingTherapy} description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63" duration="45 min"/>
-            <Card className="cards" title= "Hijamah Wet Cupping" image={CuppingTherapy} description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63" duration="45 min"/>
+            <Card className="cards" title= "Lite Detox" image={CuppingTherapy} description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="50" duration="45 min"/>
+            <Card className="cards" title= "Sports Therapy" image={CuppingTherapy} description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="50" duration="1 hour"/>
+            <Card className="cards" title= "Full Detox & Sports Therapy" image={CuppingTherapy} description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="70" duration="1 hour"/>
           </div>
         </div>
 
