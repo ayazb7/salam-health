@@ -5,10 +5,10 @@ import contactImage from '../images/contact-image.png';
 import arrow_right from '../images/chevron-right.png';
 import phone from '../images/phone.png';
 
-function ContactCard() {
+function ContactCard(props) {
 
   return (
-    <div className="contact-card">
+    <div className="contact-card" style={props.style}>
         <div className='vertical-start input-padding gap-1'>
           <h4>Contact Us</h4>
           <div className='inputs-container'>

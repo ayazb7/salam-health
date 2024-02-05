@@ -52,7 +52,7 @@ const Home = () => {
         <img src={dots} className="dots hidden"/>
         <div className='horizontal'>
           <div className='vertical-start'>
-            <h3 className='home-text'>
+            <h3 className='home-text less-gap-2'>
               Specialised Therapeutic <br></br> Treatments
             </h3>
 
@@ -89,7 +89,7 @@ const Home = () => {
           <div className='vertical-start'>
             <p className='small-text'>HOW TO GET STARTED</p>
 
-            <h3 className='home-text'>
+            <h3 className='home-text less-gap-2'>
               Simple step by step<br></br>guide
             </h3>
 
@@ -136,7 +136,7 @@ const Home = () => {
           </div>
         </div>
 
-        <ContactCard/>
+        <ContactCard style={{ top: '45%'}}/>
       </div>
 
       

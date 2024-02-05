@@ -18,7 +18,7 @@ function Navbar() {
       </a>
       
       <div className="nav-item-right">
-        <a href="/contact">Contact</a>
+        <a href="/about">About Us</a>
         <button className="book-now" onClick={handleButtonClick}>
           Book Now
         </button>

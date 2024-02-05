@@ -182,6 +182,8 @@ h4, h3, h2, p {
 
 .center {
   text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .titles{
@@ -404,6 +406,10 @@ h4, h3, h2, p {
   background-color: #2AA0C5;
 }
 
+.dark-blue {
+  background-color: #012D61;
+}
+
 .rectangle-fw {
   width: 100vw;
   padding-top: 2rem;
@@ -480,12 +486,30 @@ h4, h3, h2, p {
   gap: 20px;
 }
 
-.less-gap {
+.less-gap-1 {
   gap: 0px;
+  margin-bottom: 0.5rem;
+}
+
+.less-gap-2 {
+  gap: 0px;
+  margin-bottom: 1rem;
 }
 
 .more-gap {
   gap: 3.5rem;
+}
+
+.no-top-margin {
+  margin-top: 0;
+}
+
+.top-margin-1 {
+  margin-top: 2.5rem;
+}
+
+.bottom-marging-1 {
+  margin-bottom: 4rem;
 }
 
 .home-text {
@@ -533,6 +557,30 @@ h4, h3, h2, p {
   text-align: center;
 }
 
+.sub-text {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 21px;
+  font-weight: 300;
+  width: 40vw;
+}
+
+.treatment-description {
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  font-size: 19px;
+  font-weight: 300;
+  width: 70vw;
+}
+
+
+.cupping-therapy-image {
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+  border-radius: 15px;
+}
 
 .home-descriptions {
   justify-content: start;
@@ -679,7 +727,7 @@ h4, h3, h2, p {
 }
 
 .testimonial-title {
-  font-size: 60px;
+  font-size: 45px;
   font-weight: 800;
   line-height: 38px;
   color: white;
@@ -848,9 +896,53 @@ h4, h3, h2, p {
   margin-left: 25px;
 }
 
-
 .card-footer {
   margin-right: auto;
+}
+
+.treatment-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* This will push the button down */
+  align-items: center;
+  width: 25vw;
+  padding-bottom: 1rem;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.2);
+  color: black;
+  height: 100%; /* Set a height if all cards need to be the same height */
+}
+
+.treatment-card img {
+  height: auto;
+  width: 100%;
+  border-radius: 15px 15px 0px 0px; 
+}
+
+.treatment-text {
+  flex-grow: 1;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.treatment-name {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+}
+
+.treatment-info {
+  font-weight: 400;
+  font-size: 17px;
+  text-align: center;
+}
+
+.button-stretch {
+  align-self: stretch; /* This will make the button stretch to the container width */
+  width: 100%; /* Remove inline style width and set to 100% of the parent container */
+  margin-top: auto;
 }
 
 .contact-card {
@@ -862,7 +954,6 @@ h4, h3, h2, p {
   display: flex;
   position: absolute; 
   z-index: 2; 
-  top: 45%;
 }
 
 .contact-card h4 {

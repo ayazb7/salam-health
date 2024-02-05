@@ -6,6 +6,7 @@ import Contact from './components/Contact';
 import Book from './components/Book';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import CuppingTherapy from './components/CuppingTherapy';
 import LogoImage from './images/logo-with-text.png';
 import './App.css';
 
@@ -53,6 +54,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/book" element={<Book />} />
+            <Route path="/cupping-therapy" element={<CuppingTherapy />} />
           </Routes>
 
          <Footer /> 
