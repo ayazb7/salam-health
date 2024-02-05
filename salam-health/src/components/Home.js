@@ -148,22 +148,24 @@ const Home = () => {
 
       <div className='centered-container-no-height hidden'>
         <div className='rectangle-fw blue'> 
-          <p className='center testimonial-title'>
-            TESTIMONIALS
-          </p>
+          <div className="testimonial-wrapper">
+              <p className='center testimonial-title'>TESTIMONIALS</p>
 
-          <div className={`testimonial-content ${animationDirection === 'right' ? 'testimonial-slide-right' : 'testimonial-slide-left'}`}>
-            <p className='testimonial-text'>{currentTestimonial.message}</p>
-            <p className='testimonial-name'>{currentTestimonial.name}</p>
+              <div className={`testimonial-content ${animationDirection === 'right' ? 'testimonial-slide-right' : 'testimonial-slide-left'}`}>
+                  <p className='testimonial-text'>{currentTestimonial.message}</p>
+                  <p className='testimonial-name'>{currentTestimonial.name}</p>
+              </div>
           </div>
 
-          <div className='horizontal' style={{ marginTop: 'auto' }}>
-            <div className='small-button' onClick={handlePreviousTestimonial}>
-              <img src={arrow_narrow_left} alt="Previous"/>
-            </div>
+          <div className="button-wrapper">
+            <div className='horizontal'>
+                <div className='small-button' onClick={handlePreviousTestimonial}>
+                    <img src={arrow_narrow_left} alt="Previous"/>
+                </div>
 
-            <div className='small-button' onClick={handleNextTestimonial}>
-              <img src={arrow_narrow_right} alt="Next"/>
+                <div className='small-button' onClick={handleNextTestimonial}>
+                    <img src={arrow_narrow_right} alt="Next"/>
+                </div>
             </div>
           </div>
         </div>
