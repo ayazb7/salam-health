@@ -1,5 +1,6 @@
 // Home.js
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, } from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../App.css'; // Import your CSS file
 import CuppingImage from '../images/CuppingImage.png';
 import GroupImages from '../images/GroupImages.png';
@@ -16,8 +17,42 @@ import arrow_narrow_right from '../images/arrow-narrow-right.png';
 import group_dots from '../images/dots-group.png';
 import ContactCard from './ContactCard';
 
+const testimonials = [
+  {
+    name: 'John Armstrong',
+    message: '\“After trying various treatments for my MSK injury, I finally found relief through active cupping at Salam Health. The therapist\'s expertise and personalized approach made a significant difference in my recovery journey. The combination of cupping and movement therapy helped restore strength and functionality to the affected area.\”'  
+  },
+  {
+    name: 'Mahmoud Nasir',
+    message: '\“I am incredibly grateful to Salam Health for their hijama treatment in managing my hip osteoarthritis. The therapist, a knowledgeable student doctor, made me feel at ease throughout the session. Thanks to the hijama treatment, I experienced a noticeable reduction in joint pain and inflammation. Salam Health\'s expertise in hijama has been invaluable in improving my overall well-being and managing my osteoarthritis effectively.\”'  
+  },
+];
+
 const Home = () => {
   const [startAnimation, setStartAnimation] = useState(false);
+  const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
+  const [animationDirection, setAnimationDirection] = useState('right');
+
+  const handleNextTestimonial = () => {
+    setAnimationDirection('right');
+    setCurrentTestimonialIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+  };
+  
+  const handlePreviousTestimonial = () => {
+    setAnimationDirection('left');
+    setCurrentTestimonialIndex((prevIndex) => 
+      prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
+    );
+  };
+  
+  const currentTestimonial = testimonials[currentTestimonialIndex];
+
+  const navigate = useNavigate();
+
+  const handleGetStarted = () => {
+    navigate('/book', { replace: false, state: {} });
+    window.scrollTo(0, 0);
+  };
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -43,7 +78,7 @@ const Home = () => {
       observer.disconnect();
     };
   }, []); // Empty dependency array ensures this effect runs once after initial render
-
+  
   return (
     <div className={`home-background ${startAnimation ? 'start-animation' : 'initial-hidden'}`}>
       <div className="centered-container hidden">
@@ -96,7 +131,7 @@ const Home = () => {
             <p className='home-descriptions'>Follow our simple process to get the best<br></br>treatment as soon as possible.</p>
 
             <div className='horizontal-start top-padding-1'>
-              <button className="book-now-large">
+              <button className="book-now-large" onClick={handleGetStarted}>
                 Get Started
               </button>
 
@@ -117,21 +152,18 @@ const Home = () => {
             TESTIMONIALS
           </p>
 
-          <p className='center testimonial-text'>
-            “After trying various treatments for my MSK injury, I finally found relief through active cupping at Salam Health. The therapist's expertise and personalized approach made a significant difference in my recovery journey. The combination of cupping and movement therapy helped restore strength and functionality to the affected area.”
-          </p>
+          <div className={`testimonial-content ${animationDirection === 'right' ? 'testimonial-slide-right' : 'testimonial-slide-left'}`}>
+            <p className='testimonial-text'>{currentTestimonial.message}</p>
+            <p className='testimonial-name'>{currentTestimonial.name}</p>
+          </div>
 
-          <p className='center testimonial-name'>
-            John Armstrong
-          </p>
-
-          <div className='horizontal'>
-            <div className='small-button'>
-              <img src={arrow_narrow_left}/>
+          <div className='horizontal' style={{ marginTop: 'auto' }}>
+            <div className='small-button' onClick={handlePreviousTestimonial}>
+              <img src={arrow_narrow_left} alt="Previous"/>
             </div>
 
-            <div className='small-button'>
-              <img src={arrow_narrow_right}/>
+            <div className='small-button' onClick={handleNextTestimonial}>
+              <img src={arrow_narrow_right} alt="Next"/>
             </div>
           </div>
         </div>
