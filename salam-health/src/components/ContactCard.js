@@ -33,6 +33,7 @@ function ContactCard(props) {
               placeholder="First Name"
               className="styled-input"
               value={firstName}
+              onChange={(e) => setFirstName(e.target.value)}
               required // Adding required attribute
             />
             <input
@@ -40,6 +41,7 @@ function ContactCard(props) {
               placeholder="Last Name"
               className="styled-input"
               value={lastName}
+              onChange={(e) => setLastName(e.target.value)}
               required // Adding required attribute
             />
           </div>
@@ -49,6 +51,7 @@ function ContactCard(props) {
               placeholder="Email"
               className="styled-input"
               value={email}
+              onChange={(e) => setEmail(e.target.value)}
               required // Adding required attribute
             />
           </div>
@@ -57,6 +60,7 @@ function ContactCard(props) {
               placeholder="Message"
               className="styled-input large-input"
               value={message}
+              onChange={(e) => setMessage(e.target.value)}
               required // Adding required attribute
             />
           </div>
