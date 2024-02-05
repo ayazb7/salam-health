@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import contactImage from '../images/contact-image.png';
 import phone from '../images/phone.png';
 
-function FAQ() {
+function FAQ(props) {
   const [expanded, setExpanded] = useState(null);
 
   const questionsAndAnswers = [
@@ -27,7 +27,7 @@ function FAQ() {
   };
 
   return (
-    <div className="contact-card" style={{width:'50%'}}>
+    <div className="contact-card" style={props.style}>
       <div className='vertical-start input-padding gap-1 card-content'>
         <h4>Frequently Asked Questions</h4>
         <div className='inputs-container'>

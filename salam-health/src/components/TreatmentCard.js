@@ -9,7 +9,7 @@ export default function TreatmentCard(props) {
 
     return(
         <div className="treatment-card">
-            <img src={CardImage} alt='treatment image'/>
+            <img src={props.image} alt='treatment image'/>
 
             <div className="treatment-text">
                 <p className="treatment-name">{props.name}</p>

@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Card from './Card'
 import FAQ from './FAQ.js';
+import CuppingTherapy from '../images/cupping-therapy.png';
 
 function Book() {
     const [startAnimation, setStartAnimation] = useState(false);
@@ -34,39 +35,39 @@ function Book() {
 
   return (
     <div className={`home-background ${startAnimation ? 'start-animation' : 'initial-hidden'}`}>
-    <div className="centered-container hidden">
-        <h3 className="book-description">Our Treatments</h3>
-        <p className='bookText'>
-            Take a look at our wide range of treatments and packages, specially <br></br>
-            tailored to optimize your experience, at an affordable price.
-        </p>
-        <h3 className="book-description2">Stand Alone Treatments</h3>
+      <div className="centered-container-no-height hidden top-margin-1 bottom-marging-1">
+          <h3 className="home-text less-gap-1">Our Treatments</h3>
+          <p className='sub-text'>
+              Take a look at our wide range of treatments and packages, specially tailored to optimize your experience, at an affordable price.
+          </p>
+          <h3 className="home-text" style={{ fontSize: '32px'}}>Stand Alone Treatments</h3>
+
+          <div className='horizontal more-gap' style={{ alignItems: 'stretch'}}>
+            <Card className="cards" title= "Hijamah Wet Cupping" image={CuppingTherapy} description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63" duration="45 min"/>
+            <Card className="cards" title= "Hijamah Wet Cupping" image={CuppingTherapy} description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63" duration="45 min"/>
+            <Card className="cards" title= "Hijamah Wet Cupping" image={CuppingTherapy} description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63" duration="45 min"/>
+          </div>
+      </div>
+
+      <div className='centered-container-no-height hidden'>
+        <div className='rectangle-fw blue'> 
+          <p className='center testimonial-title' style={{ marginBottom: '1rem'}} >
+            Packages & Bundles
+          </p>
+          <p className='sub-text' style={{ color: 'white', paddingBottom: '2rem', width: '45vw' }}>
+              Take a look at our wide range of treatments and packages, specially tailored to optimize your experience, at an affordable price.
+          </p>
+
+          <div className='horizontal more-gap' style={{ alignItems: 'stretch'}}>
+            <Card className="cards" title= "Hijamah Wet Cupping" image={CuppingTherapy} description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63" duration="45 min"/>
+            <Card className="cards" title= "Hijamah Wet Cupping" image={CuppingTherapy} description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63" duration="45 min"/>
+            <Card className="cards" title= "Hijamah Wet Cupping" image={CuppingTherapy} description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63" duration="45 min"/>
+          </div>
+        </div>
+
+        <FAQ style={{top: '55%', width:'50%'}}/>
+      </div>
     </div>
-    <div className='centered-container hidden' style={{ marginTop: '15%'}}>
-    <section className="cards-list">
-              <Card className="cards" title= "Hijamah Wet Cupping" description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63" duration="45 min"/>
-              <Card className="cards" title= "Hijamah Wet Cupping" description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63" duration="45 min"/>
-              <Card className="cards" title= "Hijamah Wet Cupping" description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63" duration="45 min"/>
-         </section> 
-    </div>
-    <div className='bottom-book-block'>
-    <div className="centered-container hidden" style={{ marginTop: '-17%'}}>
-        <h3 className="book-description2" style={{ marginTop:'-21%', marginBottom: '1%', color: 'white'}}>Packages and Bundles</h3>
-        <p className='bookText' style={{ color: 'white' }}>
-            Take a look at our wide range of treatments and packages, specially <br></br>
-            tailored to optimize your experience, at an affordable price.
-        </p>
-    </div>
-    <div className='centered-container hidden' >
-    <section className="cards-list" style={{ marginTop: '-60%'}}>
-              <Card className="cards" title= "Lite Detox" description="The exact cause of most types of diabetes is unknown. In all cases, sugar builds up in the bloodstream. " price="63" duration="45 min"/>
-              <Card className="cards" title= "Sports Massage" description="The exact cause of most types of diabetes is unknown. In all cases, sugar builds up in the bloodstream. " price="63" duration="45 min"/>
-              <Card className="cards" title= "Active Cupping" description="The exact cause of most types of diabetes is unknown. In all cases, sugar builds up in the bloodstream. " price="63" duration="45 min"/>
-      </section> 
-    </div>
-    <FAQ/>
-    </div>
-</div>
   );
 }
 
