@@ -45,7 +45,7 @@ function LandingPage() {
         </div>
 
         <div className='centered-container-no-height hidden'>
-            <ContactCard style={{ position: 'relative' }} />  
+            <ContactCard style={{ position: 'relative', marginBottom: '2rem' }} />  
         </div>  
     </div>
   );

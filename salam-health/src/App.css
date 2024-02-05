@@ -444,7 +444,6 @@ h4, h3, h2, p {
 
 .rectangle-fw {
   width: 100vw;
-  height: 40vh;
   padding-top: 2rem;
   padding-bottom: 10rem;
   display: flex;
@@ -872,16 +871,6 @@ h4, h3, h2, p {
   cursor: pointer;
 }
 
-
-
-@media screen and (max-width: 1920px) {
-  .home-description {
-    padding-top: 3.5rem;
-  }
-
-}
-
-
 .card-img{
   width: 100%;
   height: 300px;
@@ -1016,7 +1005,7 @@ h4, h3, h2, p {
 }
 
 .treatment-card img {
-  height: auto;
+  height: 100%;
   width: 100%;
   border-radius: 15px 15px 0px 0px; 
 }
@@ -1237,3 +1226,50 @@ h4, h3, h2, p {
   
 }
 
+
+
+@media screen and (max-width: 1920px) {
+  .home-description {
+    padding-top: 3.5rem;
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+  .input-padding {
+    padding: 0.5rem 1rem;
+  }
+
+  .contact-card {
+    border-radius: 0; /* Remove curved borders for mobile */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: stretch; /* Stretch items to full width */
+    justify-content: start;
+    width: 100%; /* Adjust width to full viewport width */
+    padding: 0rem; /* Adjust padding as needed */
+    position: static; /* Adjust position if necessary */
+    box-shadow: none;
+  }
+
+  .contact-card h4 {
+    font-size: 30px;
+    margin-bottom: 1rem;
+  }
+
+  .contact-image {
+    display: none;
+  }
+
+  .inputs-container, .horizontal-input {
+    width: 100%; /* Full width for input containers */
+    max-width: none; /* Remove max-width constraints */
+  }
+
+  .styled-input, .large-input {
+    /* Adjust input sizes if needed */
+  }
+
+  .send-message {
+    width: auto
+  }
+}

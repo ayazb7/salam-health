@@ -51,6 +51,7 @@ function ContactCard(props) {
           <div className='horizontal-input'>
             <input
               type="text"
+              autoComplete="given-name"
               placeholder="First Name"
               className="styled-input"
               name="firstName"
@@ -60,6 +61,7 @@ function ContactCard(props) {
             />
             <input
               type="text"
+              autoComplete="family-name"
               placeholder="Last Name"
               className="styled-input"
               name="lastName"
@@ -71,6 +73,7 @@ function ContactCard(props) {
           <div className='horizontal-input'>
             <input
               type="email"
+              autoComplete="email"
               placeholder="Email"
               className="styled-input"
               name = 'email'

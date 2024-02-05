@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import BookingCard from './BookingCard'
 import FAQ from './FAQ.js';
 import CuppingTherapy from '../images/cupping-therapy.png';
+import ActiveCupping from '../images/active_cupping.png';
 
 function Book() {
     const [startAnimation, setStartAnimation] = useState(false);
