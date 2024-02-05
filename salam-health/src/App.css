@@ -861,20 +861,18 @@ h4, h3, h2, p {
   margin-left: 25px;
 }
 .book-now-card{
-  width: 144px;
-  height: 27px;
-  border-radius: 0px;
+  width: 141px;
+  height: 45px;
+  border-radius: 20px;
   box-sizing: border-box;
   border: 1px solid rgba(27, 31, 35, 0.15);
   box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
-  color: #10217D;
+  color: #FFFFFF;
   font-size: 16px;
-  background-color: #FFFFFF;
-  margin-right: auto;
-  margin-left: 20px;
-  margin-bottom: 10px;
- 
-  
+  background-color: #012D61;
+  margin-left: 0px;
+  margin-right: 70px;
+  margin-bottom: auto;
   
 }
 
@@ -894,6 +892,47 @@ h4, h3, h2, p {
   font-size: 16px;
   color: #000000;
   margin-left: 25px;
+}
+.booking-info-card{
+    
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    
+    padding: 0px;
+    align-self: left;
+    
+    margin-bottom: 27px;
+    viewport-fit: center;
+    align-items: center;
+
+    
+}
+.booking-info-card > p:hover  {
+  cursor: pointer;
+  color: #336474;
+}
+
+.booking-info-card > .info-img-card :hover {
+  cursor: pointer;
+  filter: brightness(0.9); 
+}
+.card-info{
+    font-size: 16px;
+    font-weight: semi-bold;
+    color: #529FB7;
+    margin-left: 0px;
+    margin-right: 0px;
+    
+}
+.info-img-card{
+  border-radius: 50%;
+  background-color: #529FB7;
+  display: flex;
+  margin-left: 0px;
+  height: 31px;
+  width: 31px;
+  transition: background-color 0.3s;
 }
 
 .card-footer {
@@ -1083,21 +1122,21 @@ h4, h3, h2, p {
 }
 
 .book-now-card:hover {
-  background-color: #F3F4F6;
+  background-color: #011b3a;
   text-decoration: none;
   transition-duration: 0.1s;
   cursor: pointer;
 }
 
 .book-now-card:disabled {
-  background-color: #FAFBFC;
+  background-color: #012D61;
   border-color: rgba(27, 31, 35, 0.15);
   color: #959DA5;
   cursor: default;
 }
 
 .book-now-card:active {
-  background-color: #EDEFF2;
+  background-color: #011b3a;
   box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
   transition: none 0s;
 }
@@ -1121,5 +1160,6 @@ h4, h3, h2, p {
   padding-left: 90px ;
   margin-top: -650px;
   margin-bottom: 20px;
+  
 }
 
