@@ -13,7 +13,7 @@ export default function Card(props){
 
 
     return(
-        <div className="treatment-card">
+        <div className="treatment-card" style={{ alignI: 'start' }}>
             <img src={props.image} alt='treatment image'/>
 
             <div className="treatment-text">
@@ -24,7 +24,7 @@ export default function Card(props){
                 <p className="treatment-info" style={{ textAlign: 'start', marginTop: '0', marginBottom: '0' }}>{props.duration}</p>
             </div>
             
-            <div className="horizontal" style={{ justifyContent: 'space-between' }}>
+            <div className="horizontal" style={{ justifyContent: 'space-between', width: '90%' }}>
                 <button className="book-now dark-blue" style={{ width: '10vw' }} onClick={handleButtonClick}>
                     Book
                 </button>
