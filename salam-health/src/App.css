@@ -1113,20 +1113,29 @@ h4, h3, h2, p {
 }
 
 .circle-button {
-  border-radius: 50%; 
-  height: 65px;
-  width: 65px;
-  background-color: #2AA0C5; 
-  color: white; 
-  text-decoration: none; 
-  transition: background-color 0.3s ease; 
-  border: none;
-  outline: none; 
-  cursor: pointer; 
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 5px;
+  border-radius: 50%; 
+  height: 65px;
+  width: 65px;
+  background-color: #2AA0C5;
+  text-decoration: none; 
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.circle-button button {
+  border: none;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  outline: none;
 }
 
 .circle-button:hover {
