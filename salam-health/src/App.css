@@ -850,9 +850,10 @@ h4, h3, h2, p {
     display: flex;
     flex-wrap: nowrap;
     gap: 10px;
-    overflow-x: auto;
+    
     padding: 0px;
     align-self: left;
+    
     margin-bottom: 27px;
     viewport-fit: center;
     align-items: center;
@@ -900,7 +901,9 @@ h4, h3, h2, p {
   display: flex;
   position: absolute; 
   z-index: 2; 
-  top: 45%;
+  top: 82%;
+  right: 25%;
+  margin-bottom: 60px ;
 }
 
 .contact-card h4 {
@@ -1068,5 +1071,6 @@ h4, h3, h2, p {
   padding-left: 90px ;
   margin-top: -650px;
   margin-bottom: 20px;
+  
 }
 

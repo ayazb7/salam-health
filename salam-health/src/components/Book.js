@@ -42,7 +42,7 @@ function Book() {
         </p>
         <h3 className="book-description2">Stand Alone Treatments</h3>
     </div>
-    <div className='centered-container hidden'>
+    <div className='centered-container hidden' style={{ marginTop: '15%'}}>
     <section className="cards-list">
               <Card className="cards" title= "Hijamah Wet Cupping" description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63" duration="45 min"/>
               <Card className="cards" title= "Hijamah Wet Cupping" description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63" duration="45 min"/>
@@ -57,8 +57,8 @@ function Book() {
             tailored to optimize your experience, at an affordable price.
         </p>
     </div>
-    <div className='centered-container hidden'>
-    <section className="cards-list" style={{ marginTop: '-70%'}}>
+    <div className='centered-container hidden' >
+    <section className="cards-list" style={{ marginTop: '-60%'}}>
               <Card className="cards" title= "Lite Detox" description="The exact cause of most types of diabetes is unknown. In all cases, sugar builds up in the bloodstream. " price="63" duration="45 min"/>
               <Card className="cards" title= "Sports Massage" description="The exact cause of most types of diabetes is unknown. In all cases, sugar builds up in the bloodstream. " price="63" duration="45 min"/>
               <Card className="cards" title= "Active Cupping" description="The exact cause of most types of diabetes is unknown. In all cases, sugar builds up in the bloodstream. " price="63" duration="45 min"/>
