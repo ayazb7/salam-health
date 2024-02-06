@@ -1334,6 +1334,7 @@ h4, h3, h2, p {
   .cuppingImage{
     display: none;
   }
+
   .vertical-start .home-text{
     text-align: center;
     color: black;
@@ -1376,5 +1377,9 @@ h4, h3, h2, p {
   
   .vertical-center-container .vertical-start {
     align-items: center;
+  } 
+
+  .home-text {
+    font-size: 32px;
   }
 }

@@ -50,8 +50,8 @@ const Home = () => {
       </div>
 
       <div className='centered-container-no-height hidden'>
-        <div className='rectangle-fw blue' style={{ height: '70vh', justifyContent: 'space-around' }}> 
-          <p className='center testimonial-title'>
+        <div className='rectangle-fw blue' style={{ height: '70vh', justifyContent: 'center' }}> 
+          <p className='center testimonial-title' style={{ paddingBottom: '2rem'}}>
             Types of Cupping
           </p>
 
