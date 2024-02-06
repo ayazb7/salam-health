@@ -59,7 +59,7 @@ function App() {
             <Route path="/cupping-therapy" element={<CuppingTherapy />} />
           </Routes>
 
-         {/* <Footer />  */}
+         <Footer /> 
       </div>
     </Router>
   );

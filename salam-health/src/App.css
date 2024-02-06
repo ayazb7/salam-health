@@ -1272,6 +1272,7 @@ h4, h3, h2, p {
     padding: 0rem; /* Adjust padding as needed */
     position: static; /* Adjust position if necessary */
     box-shadow: none;
+    margin-bottom: 7rem;
   }
 
   .contact-card h4 {
@@ -1298,5 +1299,21 @@ h4, h3, h2, p {
 
   .thank-you-message {
     width: 80%;
+  }
+
+  .rectangle-fw {
+    margin-bottom: 8vh;
+  }
+
+  .footer .horizontal-stretched{
+      flex-direction: column;
+  }
+
+  .footer .vertical-center{
+    align-items: center;
+    width: 100%;
+  }
+  .testimonial-text, .testimonial-name {
+    font-size: medium;
   }
 }
