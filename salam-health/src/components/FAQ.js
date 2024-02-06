@@ -29,7 +29,7 @@ function FAQ(props) {
   return (
     <div className="contact-card" style={props.style}>
       <div className='vertical-start input-padding gap-1 card-content'>
-        <h4>Frequently Asked Questions</h4>
+        <h4 className="faq-mobile">Frequently Asked Questions</h4>
         <div className='inputs-container'>
           {questionsAndAnswers.map((qa, index) => (
             <div key={index} className='accordion-item'>

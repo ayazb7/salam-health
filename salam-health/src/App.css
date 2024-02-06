@@ -1456,4 +1456,17 @@ h4, h3, h2, p {
   .consult{
     margin-top: 1.5rem;
   }
+  .sub-text{
+    font-size: 15px;
+    width: 60%;
+  }
+  .rectangle-fw{
+    height: 80% !important;
+  }
+  .contact-card{
+    width: 100% !important;
+  }
+  .faq-mobile{
+    font-size: 25px !important;
+  }
 }
