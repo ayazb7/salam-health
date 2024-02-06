@@ -1377,4 +1377,23 @@ h4, h3, h2, p {
   .vertical-center-container .vertical-start {
     align-items: center;
   }
+  .horizontal.column{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    position: relative;
+    
+    
+    
+    
+   
+    
+  }
+  .treatment-card {
+    width: 90vw;
+    
+  }
+  .book-now{
+    width: 35vw !important;
+  }
 }

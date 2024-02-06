@@ -43,7 +43,7 @@ function Book() {
           </p>
           <h3 className="home-text" style={{ fontSize: '32px'}}>Stand Alone Treatments</h3>
 
-          <div className='horizontal more-gap' style={{ alignItems: 'stretch'}}>
+          <div className='horizontal more-gap column' style={{ alignItems: 'stretch'}}>
             <BookingCard className="cards" title= "Hijamah Wet Cupping" image={CuppingTherapy} description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63" duration="45 min"/>
             <BookingCard className="cards" title= "Hijamah Wet Cupping" image={CuppingTherapy} description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63" duration="45 min"/>
             <BookingCard className="cards" title= "Hijamah Wet Cupping" image={CuppingTherapy} description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63" duration="45 min"/>
@@ -59,7 +59,7 @@ function Book() {
               Take a look at our wide range of treatments and packages, specially tailored to optimize your experience, at an affordable price.
           </p>
 
-          <div className='horizontal more-gap' style={{ alignItems: 'stretch'}}>
+          <div className='horizontal more-gap column' style={{ alignItems: 'stretch'}}>
             <BookingCard className="cards" title= "Hijamah Wet Cupping" image={CuppingTherapy} description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63" duration="45 min"/>
             <BookingCard className="cards" title= "Hijamah Wet Cupping" image={CuppingTherapy} description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63" duration="45 min"/>
             <BookingCard className="cards" title= "Hijamah Wet Cupping" image={CuppingTherapy} description="HEALTH CONSULTATION , SPORTS MASSAGE , INFRARED DEEP HEAT , WET CUPPING , GRASTON THERAPY" price="63" duration="45 min"/>
