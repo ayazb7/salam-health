@@ -1304,6 +1304,8 @@ h4, h3, h2, p {
 
   .rectangle-fw {
     margin-bottom: 8vh;
+    height: 66vh;
+    padding-bottom: 5rem;
   }
 
   .footer .horizontal-stretched{
@@ -1315,6 +1317,7 @@ h4, h3, h2, p {
     width: 100%;
   }
   .testimonial-text, .testimonial-name {
-    font-size: medium;
+    font-size: 15px;
   }
+
 }
