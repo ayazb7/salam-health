@@ -1184,6 +1184,29 @@ h4, h3, h2, p {
   background-color: #2588A7; /* Darker shade of blue on hover */
 }
 
+.thank-you-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 27.5vw;
+  gap: 20px; /* Adjust the gap as needed */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.thank-you-logo {
+  height: auto;
+  width: 20%;
+  max-width: 250px;
+}
+
+.thank-you-title {
+  font-size: 28px;
+  margin-bottom: 1rem;
+}
+
 .book-now-card:hover {
   background-color: #011b3a;
   text-decoration: none;
@@ -1271,5 +1294,9 @@ h4, h3, h2, p {
 
   .send-message {
     width: auto
+  }
+
+  .thank-you-message {
+    width: 80%;
   }
 }
