@@ -109,23 +109,46 @@ const Home = () => {
         </div>
       </div>
 
-      <div className='centered-container hidden'>
-        <img src={group_dots} className="group-dots hidden"/>
-        <div className='horizontal more-gap'>
+      <div className='centered-container hidden mobile-no-height'>
+        <img src={group_dots} className="group-dots hidden desktop-only"/>
+        <div className='horizontal more-gap mobile-vertical'>
 
-          <div className='horizontal less-gap'>
+          <div className='horizontal less-gap desktop-only'>
             <div className='vertical-bottom-padding'>
-              <img src={consult}/>
-              <img src={book}/>
+              <img src={consult} className="consult"/>
+              <img src={book} className="book"/>
             </div>
             <div className='vertical-top-padding'>
-              <img src={choose}/>
-              <img src={rest}/>
+              <img src={choose} className="choose"/>
+              <img src={rest} className="rest"/>
             </div>
           </div>
 
+          <div className='vertical-center mobile-only'>
+              <p className='small-text'>HOW TO GET STARTED</p>
 
-          <div className='vertical-start'>
+              <h3 className='home-text less-gap-2'>
+                Simple step by step guide
+              </h3>
+
+              <p className='home-descriptions'>Follow our simple process to get the best<br></br>treatment as soon as possible.</p>
+              <img src={consult} className="consult"/>
+              <img src={choose} className="choose"/>
+              <img src={book} className="book"/>
+              <img src={rest} className="rest"/>
+              <button className="book-now-large" onClick={handleGetStarted}>
+                Get Started
+              </button>
+              <div className='learn-more'>
+                <p>Learn More</p>
+                <div className='circle'>
+                  <img src={arrow_right}/>
+                </div>
+              </div>
+          </div>
+
+
+          <div className='vertical-start desktop-only'>
             <p className='small-text'>HOW TO GET STARTED</p>
 
             <h3 className='home-text less-gap-2'>
