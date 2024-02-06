@@ -151,7 +151,8 @@ const Home = () => {
           <div className="testimonial-wrapper">
               <p className='center testimonial-title'>TESTIMONIALS</p>
 
-              <div className={`testimonial-content ${animationDirection === 'right' ? 'testimonial-slide-right' : 'testimonial-slide-left'}`}>
+              <div className={`testimonial-content ${animationDirection === 'right' ? 'testimonial-slide-right' : 'testimonial-slide-left'}`} 
+                  key={`${currentTestimonialIndex}-${animationDirection}`}>
                   <p className='testimonial-text'>{currentTestimonial.message}</p>
                   <p className='testimonial-name'>{currentTestimonial.name}</p>
               </div>
