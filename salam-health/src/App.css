@@ -745,6 +745,7 @@ h4, h3, h2, p {
 .learn-more {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
 }
 
@@ -864,6 +865,10 @@ h4, h3, h2, p {
   text-decoration: none;
   /* transition: background-color 0.3s ease; */
   outline: none; /* Remove the default focus outline */
+}
+
+.mobile-only{
+  display: none;
 }
 
 .book-now-link:hover {
@@ -1338,7 +1343,7 @@ h4, h3, h2, p {
     text-align: center;
     color: black;
     font-size: 29px;
-    margin-top: 5rem;
+    margin-top: 1rem;
   }
 
   vertical-center-container {
@@ -1372,8 +1377,33 @@ h4, h3, h2, p {
   .home-descriptions{
     font-size: medium;
     text-align: center;
+    margin-bottom: -0.1rem;;
+  }
+
+  .group-dots{
+    width: 40%;
+    height: auto;
+  }
+
+  .desktop-only{
+    display: none;
+  }
+
+  .mobile-only{
+    display: inline;
   }
   
+  .mobile-vertical{
+    flex-direction: column;
+  }
+
+  .mobile-no-height{
+    height: auto;
+  }
+  .vertical-center .mobile-only{
+    align-items: center;
+    justify-content: center;
+  }
   .vertical-center-container .vertical-start {
     align-items: center;
   }
@@ -1394,6 +1424,31 @@ h4, h3, h2, p {
     
   }
   .book-now{
-    width: 35vw !important;
+    width: 35vw !important;}
+  .book-now-large{
+    display:inline
+  }
+  .learn-more p{
+    font-size: large;
+  }
+
+  .circle{
+    height: 30px;
+    width: 30px;
+  }
+  .circle img{
+    height: 20px;
+    width: 20px;
+  }
+  .home-text{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 1.4em;
+  }
+  .mobile-only .small-text{
+    margin-top: 10vh;
+  }
+  .consult{
+    margin-top: 1.5rem;
   }
 }
