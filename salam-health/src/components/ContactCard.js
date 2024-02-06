@@ -16,36 +16,32 @@ function ContactCard(props) {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    // Check if all required fields are filled
-    if (!firstName || !lastName || !email || !message) {
-      setValidationMessage('All fields are required');
+    if (!form.current.checkValidity()) {
+      // The form is not valid, let the browser show validation messages
       return;
     }
-
-    // Clear previous validation message
-    setValidationMessage('');
-
+  
     // Use the emailjs.sendForm function
     emailjs
-    .sendForm('service_j3xclp1', 'template_fr08b1d', form.current, 'SmtwwMtrMcQScPLai') 
-    .then(
-      (result) => {
-        console.log('Email sent successfully:', result.text);
-      },
-      (error) => {
-        console.error('Failed to send email:', error.text);
-      }
-    );
-    
-    setFirstName('');
-    setLastName('');
-    setEmail('');
-    setMessage('');
-  }
+      .sendForm('service_j3xclp1', 'template_fr08b1d', form.current, 'SmtwwMtrMcQScPLai') 
+      .then(
+        (result) => {
+          console.log('Email sent successfully:', result.text);
+          // Clear the form fields after successful submission
+          setFirstName('');
+          setLastName('');
+          setEmail('');
+          setMessage('');
+        },
+        (error) => {
+          console.error('Failed to send email:', error.text);
+        }
+      );
+  };
 
   return (
     <div className="contact-card" style={props.style}>
-      <form ref={form} className='vertical-start input-padding gap-1'>
+      <form ref={form} onSubmit={sendEmail} className='vertical-start input-padding gap-1'>
         <h4>Contact Us</h4>
         <div className='inputs-container'>
           <div className='horizontal-input'>
@@ -94,18 +90,14 @@ function ContactCard(props) {
           </div>
         </div>
 
-        {validationMessage && <p style={{ color: 'red' }}>{validationMessage}</p>}
-
         <div className='horizontal'>
-          <button type="submit" className="send-message" onClick={sendEmail}>
+          <button type="submit" className="send-message">
             Send message
             <img src={arrow_right} alt="Arrow right"/>
           </button>
 
           <a href="tel:+447459150327" className="circle-button">
-            <button>
-              <img src={phone} alt="Call" />
-            </button>
+            <img src={phone} alt="Call" />
           </a>
         </div>
       </form>
