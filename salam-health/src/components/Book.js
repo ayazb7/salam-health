@@ -51,7 +51,7 @@ function Book() {
       </div>
 
       <div className='centered-container-no-height hidden'>
-        <div className='rectangle-fw blue'> 
+        <div className='rectangle-fw blue' style={{ height: '70vh' }}> 
           <p className='center testimonial-title' style={{ marginBottom: '1rem'}} >
             Packages & Bundles
           </p>
