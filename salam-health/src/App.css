@@ -991,6 +991,10 @@ h4, h3, h2, p {
   margin-right: auto;
 }
 
+.mobile{
+  display: none;
+}
+
 .treatment-card {
   display: flex;
   flex-direction: column;
@@ -1320,4 +1324,57 @@ h4, h3, h2, p {
     font-size: 15px;
   }
 
+  .mobile{
+    display: flex;
+    margin-top: 11rem;
+    height: 300px; /* Adjust height as needed */
+    width: 100%; /* Ensure full width */
+  }
+
+  .cuppingImage{
+    display: none;
+  }
+  .vertical-start .home-text{
+    text-align: center;
+    color: black;
+    font-size: 29px;
+    margin-top: 5rem;
+  }
+
+  vertical-center-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Additional styles to center vertically and horizontally */
+  }
+
+  .dots{
+    width: 30%;
+    height: auto;
+    bottom: 47%;
+    right: 8%;
+  }
+
+  .plus-imagetop{
+    width: 21%;
+    height: auto;
+    bottom: 52%;
+    right: 2%;
+  }
+
+  .plus-imagebot{
+    width: 21%;
+    height: auto;
+    bottom: 46%;
+    right: 2%;
+  }
+
+  .home-descriptions{
+    font-size: medium;
+    text-align: center;
+  }
+  
+  .vertical-center-container .vertical-start {
+    align-items: center;
+  }
 }

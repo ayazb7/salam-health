@@ -48,7 +48,7 @@ function App() {
   return (
     <Router>
       <div>
-        {/* <Navbar /> */}
+        <Navbar />
 
         <Routes>
             <Route path="/" element={<LandingPage />} />

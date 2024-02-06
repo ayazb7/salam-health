@@ -5,6 +5,7 @@ import '../App.css'; // Import your CSS file
 import CuppingImage from '../images/CuppingImage.png';
 import GroupImages from '../images/GroupImages.png';
 import GroupImages2 from '../images/GroupImages2.png';
+import Mobile1 from '../images/Mobile1.png';
 import dots from '../images/dots.png';
 import arrow from '../images/arrow_circle.png';
 import arrow_right from '../images/chevron-right.png';
@@ -86,7 +87,9 @@ const Home = () => {
         <img src={GroupImages} className="plus-imagebot hidden"/>
         <img src={dots} className="dots hidden"/>
         <div className='horizontal'>
+        <div className='vertical-center-container'> 
           <div className='vertical-start'>
+          <img src={Mobile1} className="mobile hidden"/>
             <h3 className='home-text less-gap-2'>
               Specialised Therapeutic <br></br> Treatments
             </h3>
@@ -100,6 +103,7 @@ const Home = () => {
               </div>
             </div>
           </div>
+        </div>
 
           <img src={CuppingImage} className="cuppingImage"/>
         </div>
