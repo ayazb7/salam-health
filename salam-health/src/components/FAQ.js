@@ -27,6 +27,7 @@ function FAQ(props) {
   };
 
   return (
+<<<<<<< Updated upstream
     <div className="contact-card" style={props.style}>
       <div className='vertical-start input-padding gap-1 card-content'>
         <h4 className="faq-mobile">Frequently Asked Questions</h4>
@@ -49,6 +50,11 @@ function FAQ(props) {
             </div>
           ))}
         </div>
+=======
+    <div className='contact-card' style={{ padding: '1.5rem 0 1.5rem 3.5rem' }}>
+      <div className='vertical-start gap-1'>
+        <h4 style={{ fontSize: '30px' }}>Frequently Asked Questions</h4>
+>>>>>>> Stashed changes
 
         <div className='horizontal'>
           <button className="send-message">
@@ -61,6 +67,41 @@ function FAQ(props) {
         </div>
       </div>
     </div>
+
+    // <div className="contact-card" style={props.style}>
+    //   <div className='vertical-start input-padding gap-1 card-content'>
+    //     <h4>Frequently Asked Questions</h4>
+    //     <div className='inputs-container'>
+    //       {questionsAndAnswers.map((qa, index) => (
+    //         <div key={index} className='accordion-item'>
+    //           <button
+    //             className={`accordion-button ${expanded === index ? 'active' : ''}`}
+    //             onClick={() => handleAccordionClick(index)}
+    //           >
+    //             <span style={{ marginRight: '10px' }}>{qa.question}</span>
+    //             <span className={`arrow-icon ${expanded === index ? 'rotate' : ''}`}>▼</span>
+    //           </button>
+    //           {expanded === index && (
+    //             <div className="accordion-content">
+    //               <p>{qa.answer}</p>
+    //               {/* Add more content as needed */}
+    //             </div>
+    //           )}
+    //         </div>
+    //       ))}
+    //     </div>
+
+    //     <div className='horizontal'>
+    //       <button className="send-message">
+    //         Contact Us
+    //       </button>
+
+    //       <button className="circle-button">
+    //         <img src={phone} alt="Phone"/>
+    //       </button>
+    //     </div>
+    //   </div>
+    // </div>
   );
 }
 

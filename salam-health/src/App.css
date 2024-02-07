@@ -1299,10 +1299,6 @@ h4, h3, h2, p {
     max-width: none; /* Remove max-width constraints */
   }
 
-  .styled-input, .large-input {
-    /* Adjust input sizes if needed */
-  }
-
   .send-message {
     width: auto
   }
