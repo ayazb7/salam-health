@@ -8,7 +8,7 @@ import dryCupping from '../images/dry_cupping.png';
 import ContactCard from './ContactCard';
 import TreatmentCard from './TreatmentCard';
 
-const Home = () => {
+const CuppingTherapy = () => {
   const [startAnimation, setStartAnimation] = useState(false);
 
   useEffect(() => {
@@ -71,4 +71,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default CuppingTherapy;

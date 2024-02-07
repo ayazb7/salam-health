@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 import CuppingTherapy from './components/CuppingTherapy';
 import LogoImage from './images/logo-with-text.png';
 import './App.css';
+import SportsMassage from './components/SportsMassage';
 
 function App() {
   // State for scroll position and navbar background color
@@ -57,6 +58,7 @@ function App() {
             {/* <Route path="/contact" element={<Contact />} /> */}
             <Route path="/book" element={<Book />} />
             <Route path="/cupping-therapy" element={<CuppingTherapy />} />
+            <Route path="/sports-massage" element={<SportsMassage />} />
           </Routes>
 
          <Footer /> 

@@ -49,7 +49,7 @@ function Footer() {
         <div className='vertical-start'>
             <p className='footer-header'>Services</p>
             <a href="/cupping-therapy" className='footer-item'>Cupping Therapy</a>
-            <a href="/" className='footer-item'>Sports Massages</a>
+            <a href="/sports-massage" className='footer-item'>Sports Massages</a>
             <a href="/"className='footer-item'>Detox</a>
         </div>
 
