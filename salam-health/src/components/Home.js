@@ -94,7 +94,7 @@ const Home = () => {
               Specialised Therapeutic <br></br> Treatments
             </h3>
 
-            <p className='home-descriptions'>We offer a wide range of treatments and packages based on natural therapies and holistic healing.</p>
+            <p className='home-descriptions'>We offer a wide range of treatments and <br/> packages based on natural therapies <br/> and holistic healing.</p>
 
             <div className='learn-more'>
               <p>Learn More</p>
