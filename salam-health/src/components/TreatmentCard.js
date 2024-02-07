@@ -1,5 +1,4 @@
 import React from "react";
-import CardImage from '../images/cupping-therapy.png';
 
 export default function TreatmentCard(props) {
     const handleButtonClick = () => {
