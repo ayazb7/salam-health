@@ -2,7 +2,9 @@
 import React, { useState, useEffect } from 'react';
 import '../App.css'; // Import your CSS file
 import cuppingTherapy from '../images/cupping-therapy.png';
+import wetCupping from '../images/wet_cupping.png';
 import activeCupping from '../images/active_cupping.png';
+import dryCupping from '../images/dry_cupping.png';
 import ContactCard from './ContactCard';
 import TreatmentCard from './TreatmentCard';
 
@@ -57,8 +59,8 @@ const Home = () => {
           </p>
 
           <div className='horizontal column more-gap' style={{ alignItems: 'stretch'}} >
-            <TreatmentCard name="Wet Cupping" image={cuppingTherapy} info="The process of using suction cups on the skin to draw out a small amount of blood, promoting detoxification and stimulating healing."/>
-            <TreatmentCard name="Dry Cupping" image={cuppingTherapy} info="Suction cups applied to specific areas of the body to relieve muscle tension, improve blood flow, and promote relaxation."/>
+            <TreatmentCard name="Wet Cupping" image={wetCupping} info="The process of using suction cups on the skin to draw out a small amount of blood, promoting detoxification and stimulating healing."/>
+            <TreatmentCard name="Dry Cupping" image={dryCupping} info="Suction cups applied to specific areas of the body to relieve muscle tension, improve blood flow, and promote relaxation."/>
             <TreatmentCard name="Active Cupping" image={activeCupping} info="Combines cupping therapy with physical movement or exercise to target specific areas, enhance blood flow, and improve muscle recovery and flexibility."/>
           </div>
         </div>

@@ -453,7 +453,7 @@ h4, h3, h2, p {
   z-index: 1;
   position: relative;
   height: 40vh;
-  margin-bottom: 60vh;
+  margin-bottom: 64vh;
 }
 
 .testimonial-wrapper {
@@ -905,10 +905,8 @@ h4, h3, h2, p {
     border-radius: 9px;
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
     margin-bottom: 20px;
-     
-    
-      
 }
+
 .card-description{
   margin-top: 0px;
   margin-right: auto;
@@ -1016,7 +1014,7 @@ h4, h3, h2, p {
 }
 
 .treatment-card img {
-  height: 40%; /* Set the height to 40% of the treatment card */
+  height: 40%;
   object-fit: cover;
   width: 100%;
   border-radius: 15px 15px 0px 0px; 
@@ -1476,6 +1474,10 @@ h4, h3, h2, p {
     font-size: 35px;
     
     
+  }
+
+  .mobile-no-height {
+    height: auto;
   }
   
 }
