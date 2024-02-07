@@ -124,7 +124,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className='vertical-center mobile-only'>
+          <div className='vertical-center mobile-only' style={{ marginBottom: '3rem'}}>
               <p className='small-text'>HOW TO GET STARTED</p>
 
               <h3 className='home-text less-gap-2'>
@@ -139,12 +139,12 @@ const Home = () => {
               <button className="book-now-large" onClick={handleGetStarted}>
                 Get Started
               </button>
-              <div className='learn-more'>
+              {/* <div className='learn-more'>
                 <p>Learn More</p>
                 <div className='circle'>
                   <img src={arrow_right}/>
                 </div>
-              </div>
+              </div> */}
           </div>
 
 
@@ -162,19 +162,19 @@ const Home = () => {
                 Get Started
               </button>
 
-              <div className='learn-more'>
+              {/* <div className='learn-more'>
                 <p>Learn More</p>
                 <div className='circle'>
                   <img src={arrow_right}/>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
       </div>
 
       <div className='centered-container-no-height hidden'>
-        <div className='rectangle-fw blue'> 
+        <div className='rectangle-fw blue mobile-height' style={{ marginBottom: '64vh' }} > 
           <div className="testimonial-wrapper">
               <p className='center testimonial-title'>TESTIMONIALS</p>
 
