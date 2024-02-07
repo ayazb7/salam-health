@@ -27,7 +27,6 @@ function FAQ(props) {
   };
 
   return (
-<<<<<<< Updated upstream
     <div className="contact-card" style={props.style}>
       <div className='vertical-start input-padding gap-1 card-content'>
         <h4 className="faq-mobile">Frequently Asked Questions</h4>
@@ -50,11 +49,6 @@ function FAQ(props) {
             </div>
           ))}
         </div>
-=======
-    <div className='contact-card' style={{ padding: '1.5rem 0 1.5rem 3.5rem' }}>
-      <div className='vertical-start gap-1'>
-        <h4 style={{ fontSize: '30px' }}>Frequently Asked Questions</h4>
->>>>>>> Stashed changes
 
         <div className='horizontal'>
           <button className="send-message">
