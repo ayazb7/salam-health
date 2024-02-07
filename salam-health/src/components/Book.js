@@ -54,7 +54,7 @@ function Book() {
       </div>
 
       <div className='centered-container-no-height hidden'>
-        <div className='rectangle-fw blue' style={{ height: '77.5vh' }}> 
+        <div className='rectangle-fw blue mobile-margin-botton' style={{ height: '85vh', marginBottom: '65vh' }}> 
           <p className='center testimonial-title' style={{ marginBottom: '1rem'}} >
             Packages & Bundles
           </p>

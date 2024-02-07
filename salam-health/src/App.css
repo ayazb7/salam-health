@@ -453,7 +453,6 @@ h4, h3, h2, p {
   z-index: 1;
   position: relative;
   height: 40vh;
-  margin-bottom: 64vh;
 }
 
 .testimonial-wrapper {
@@ -781,7 +780,6 @@ h4, h3, h2, p {
 .testimonial-title {
   font-size: 45px;
   font-weight: 800;
-  line-height: 38px;
   color: white;
 }
 
@@ -1313,6 +1311,19 @@ h4, h3, h2, p {
     padding-bottom: 5rem;
   }
 
+  .rectangle-fw{
+    height: 80% !important;
+  }
+
+  .mobile-height {
+    height: 65vh !important;
+    margin-bottom: 2rem !important;
+  }
+
+  .mobile-margin-botton {
+    margin-bottom: 2rem !important;
+  }
+
   .footer .horizontal-stretched{
       flex-direction: column;
   }
@@ -1451,9 +1462,7 @@ h4, h3, h2, p {
     font-size: 15px;
     width: 60%;
   }
-  .rectangle-fw{
-    height: 80% !important;
-  }
+  
   .contact-card{
     width: 100% !important;
   }
@@ -1480,4 +1489,7 @@ h4, h3, h2, p {
     height: auto;
   }
   
+  .footer-header {
+    margin-bottom: 0.5rem;
+  }
 }

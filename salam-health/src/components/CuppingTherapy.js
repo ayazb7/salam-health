@@ -53,7 +53,7 @@ const Home = () => {
       </div>
 
       <div className='centered-container-no-height hidden'>
-        <div className='rectangle-fw blue' style={{ height: '70vh', justifyContent: 'center' }}> 
+        <div className='rectangle-fw blue mobile-margin-botton' style={{ height: '70vh', justifyContent: 'center', marginBottom: '65vh' }}> 
           <p className='center testimonial-title cupping' style={{ paddingBottom: '2rem'}}>
             Types of Cupping
           </p>
@@ -65,7 +65,7 @@ const Home = () => {
           </div>
         </div>
 
-        <ContactCard style={{top: '50%'}}/>
+        <ContactCard style={{top: '52.5%'}}/>
       </div>
     </div>
   );
