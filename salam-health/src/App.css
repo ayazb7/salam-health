@@ -630,6 +630,7 @@ h4, h3, h2, p {
   margin-top: 5rem;
   margin-bottom: 4rem;
   border-radius: 15px;
+  
 }
 
 .home-descriptions {
@@ -1465,4 +1466,21 @@ h4, h3, h2, p {
   .faq-mobile{
     font-size: 25px !important;
   }
+  .cupping-therapy-image{
+    width: 80%;
+    
+  }
+  .treatment-description{
+    font-size: 13px;
+    width: 80%;
+    
+    }
+  .rectangle-fw.mobile{
+    width: 100%;
+  }
+  .center.mobile.testimonial-title{
+    font-size: 35px;
+    margin: 0 0 0 0;
+  }
+  
 }

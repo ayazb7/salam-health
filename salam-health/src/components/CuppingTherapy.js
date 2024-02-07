@@ -50,12 +50,12 @@ const Home = () => {
       </div>
 
       <div className='centered-container-no-height hidden'>
-        <div className='rectangle-fw blue' style={{ height: '70vh', justifyContent: 'center' }}> 
-          <p className='center testimonial-title' style={{ paddingBottom: '2rem'}}>
+        <div className='rectangle-fw mobile blue' style={{ height: '70vh', justifyContent: 'center' }}> 
+          <p className='center mobile testimonial-title' style={{ paddingBottom: '2rem'}}>
             Types of Cupping
           </p>
 
-          <div className='horizontal more-gap' style={{ alignItems: 'stretch'}} >
+          <div className='horizontal column more-gap' style={{ alignItems: 'stretch'}} >
             <TreatmentCard name="Wet Cupping" image={cuppingTherapy} info="The process of using suction cups on the skin to draw out a small amount of blood, promoting detoxification and stimulating healing."/>
             <TreatmentCard name="Dry Cupping" image={cuppingTherapy} info="Suction cups applied to specific areas of the body to relieve muscle tension, improve blood flow, and promote relaxation."/>
             <TreatmentCard name="Active Cupping" image={cuppingTherapy} info="Combines cupping therapy with physical movement or exercise to target specific areas, enhance blood flow, and improve muscle recovery and flexibility."/>
