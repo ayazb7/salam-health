@@ -1288,7 +1288,7 @@ h4, h3, h2, p {
   align-items: flex-start;
   justify-content: flex-start;
   box-shadow: -8px 0px 10px -2px rgba(0, 0, 0, 0.3); /* Adjust the spread and blur */
-  margin: 14% 0;
+  margin: 0 0;
   padding: 0;
   border-color: black;
 }
@@ -1595,7 +1595,8 @@ h4, h3, h2, p {
     display: inline;
     fill: #2AA0C5;
     align-self: flex-end;
-    
+    margin-top: 4%;
+    height: 4%;
     width: 30%;
   }
   .menu-mobile-only.clicked {

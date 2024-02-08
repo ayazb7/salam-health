@@ -48,8 +48,8 @@ function Navbar() {
       exit={{ opacity: 0, x: '100%' }} // Slide out to the right
       transition={{ duration: 0.3 }}
     >
-      
-      <a className='top-margin-1' href="/about">About Us</a>
+      <MyCloseSVG className={`menu-mobile-only-close ${isClicked ? 'clicked' : ''} `} onClick={()=>{setIsClicked(prevState => !prevState); handleMenuToggle(); }}  />
+      <a  href="/about">About Us</a>
       <a href="/cupping-therapy">Cupping Therapy</a>
       <a href="/sports-message">Sports Massage</a>
       <a href="/detox">Detox</a>
