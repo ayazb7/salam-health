@@ -3,9 +3,12 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import contactImage from '../images/contact-image.png';
 import phone from '../images/phone.png';
+import Vector from '../images/Vector.png';
 
 function FAQ(props) {
   const [expanded, setExpanded] = useState(null);
+  const [rotation, setRotation] = useState(0);
+  const [rotatedIndexes, setRotatedIndexes] = useState([]);
 
   const questionsAndAnswers = [
     {
@@ -24,6 +27,12 @@ function FAQ(props) {
 
   const handleAccordionClick = (index) => {
     setExpanded(expanded === index ? null : index);
+
+    if (rotatedIndexes.includes(index)) {
+      setRotatedIndexes(rotatedIndexes.filter((item) => item !== index));
+    } else {
+      setRotatedIndexes([...rotatedIndexes, index]);
+    }
   };
 
   return (
@@ -38,7 +47,7 @@ function FAQ(props) {
                 onClick={() => handleAccordionClick(index)}
               >
                 <span style={{ marginRight: '10px' }}>{qa.question}</span>
-                <span className={`arrow-icon ${expanded === index ? 'rotate' : ''}`}>▼</span>
+                <span className={`arrow-icon ${rotatedIndexes.includes(index) ? 'rotate' : ''}`}>&#43;</span>
               </button>
               {expanded === index && (
                 <div className="accordion-content">

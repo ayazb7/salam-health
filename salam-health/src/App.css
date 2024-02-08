@@ -588,14 +588,28 @@ h4, h3, h2, p {
 }
 
 .accordion-button{
-  background-color: white;
-  height: 66%;
-  width: 103%;
+  background-color: rgb(207, 207, 207);
+  height: 86%;
+  width: 93%;
   border: none;
+  border-radius: 22px;
+  padding: 12px;
+}
+
+.accordion-item{
+  font-size: small;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
 }
 
 .accordion-content{
-  font-size: small;
+  font-size: 11px;
+  text-align: center;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+.accordion-content.expanded {
+  max-height: 1000px; /* Adjust to a large enough value to cover the height of your content */
 }
 
 .card-content {
@@ -1525,8 +1539,11 @@ h4, h3, h2, p {
   
   .center.testimonial-title.cupping{
     font-size: 35px;
-    
-    
+  }
+
+  .rotate {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease; /* Optional: Add transition for smoother effect */
   }
 
   .mobile-no-height {
