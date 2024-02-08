@@ -40,24 +40,26 @@ function Navbar() {
       </div>
       <MySVG className={`menu-mobile-only ${isClicked ? 'clicked' : ''}`} onClick={()=>{setIsClicked(prevState => !prevState); handleMenuToggle(); }}  />
       <AnimatePresence>
-        {isMenuOpen && (
-          <motion.div
-            className="burger-menu"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.8 }}
-            transition={{ duration: 0.3 }}
-          >
-            
-            <MyCloseSVG className="menu-mobile-only-close" onClick={handleMenuToggle}  />
-            
-            <a href="/about">About Us</a>
-            <button className="book-now" onClick={handleButtonClick}>
-              Book Now
-            </button>
-          </motion.div>
-        )}
-      </AnimatePresence>
+  {isMenuOpen && (
+    <motion.div
+      className="burger-menu"
+      initial={{ opacity: 0, x: '100%' }} // Slide in from the right
+      animate={{ opacity: 1, x: 0 }} // Slide to the center
+      exit={{ opacity: 0, x: '100%' }} // Slide out to the right
+      transition={{ duration: 0.3 }}
+    >
+      
+      <a className='top-margin-1' href="/about">About Us</a>
+      <a href="/cupping-therapy">Cupping Therapy</a>
+      <a href="/sports-message">Sports Massage</a>
+      <a href="/detox">Detox</a>
+      <button className="menu-book-now" onClick={handleButtonClick}>
+          Book Now
+      </button>
+      
+      </motion.div>
+      )}
+    </AnimatePresence>
     </nav>
   );
 }
