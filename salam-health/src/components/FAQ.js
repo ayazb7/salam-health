@@ -37,9 +37,9 @@ function FAQ(props) {
 
   return (
     <div className="contact-card" style={props.style}>
-      <div className='vertical-start input-padding gap-1 card-content'>
-        <h4 className="faq-mobile">Frequently Asked Questions</h4>
-        <div className='inputs-container'>
+      <div className='vertical-center  gap-1 card-content' style={{ padding: '2rem' }}>
+        <h4 className="faq-mobile" style={{ marginTop: '2rem', marginBottom: '2rem' }}>Frequently Asked Questions</h4>
+        <div className='inputs-container' style={{ width: '100%'}}>
           {questionsAndAnswers.map((qa, index) => (
             <div key={index} className='accordion-item'>
               <button
@@ -52,7 +52,6 @@ function FAQ(props) {
               {expanded === index && (
                 <div className="accordion-content">
                   <p>{qa.answer}</p>
-                  {/* Add more content as needed */}
                 </div>
               )}
             </div>
@@ -64,47 +63,12 @@ function FAQ(props) {
             Contact Us
           </button>
 
-          <button className="circle-button">
-            <img src={phone} alt="Phone"/>
-          </button>
+          <a href="tel:+447459150327" className="circle-button">
+            <img src={phone} alt="Call" />
+          </a>
         </div>
       </div>
     </div>
-
-    // <div className="contact-card" style={props.style}>
-    //   <div className='vertical-start input-padding gap-1 card-content'>
-    //     <h4>Frequently Asked Questions</h4>
-    //     <div className='inputs-container'>
-    //       {questionsAndAnswers.map((qa, index) => (
-    //         <div key={index} className='accordion-item'>
-    //           <button
-    //             className={`accordion-button ${expanded === index ? 'active' : ''}`}
-    //             onClick={() => handleAccordionClick(index)}
-    //           >
-    //             <span style={{ marginRight: '10px' }}>{qa.question}</span>
-    //             <span className={`arrow-icon ${expanded === index ? 'rotate' : ''}`}>▼</span>
-    //           </button>
-    //           {expanded === index && (
-    //             <div className="accordion-content">
-    //               <p>{qa.answer}</p>
-    //               {/* Add more content as needed */}
-    //             </div>
-    //           )}
-    //         </div>
-    //       ))}
-    //     </div>
-
-    //     <div className='horizontal'>
-    //       <button className="send-message">
-    //         Contact Us
-    //       </button>
-
-    //       <button className="circle-button">
-    //         <img src={phone} alt="Phone"/>
-    //       </button>
-    //     </div>
-    //   </div>
-    // </div>
   );
 }
 
