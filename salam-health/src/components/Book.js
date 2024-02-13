@@ -46,15 +46,15 @@ function Book() {
           </p>
           <h3 className="home-text" style={{ fontSize: '32px'}}>Stand Alone Treatments</h3>
 
-          <div className='horizontal column more-gap mobile-no-height' style={{ alignItems: 'stretch', height: '65vh' }}>
+          <div className='horizontal card-laptop column  more-gap mobile-no-height' style={{ alignItems: 'stretch', height: '65vh' }}>
             <BookingCard className="cards" title= "Sports Massage" image={SportsMassage} description="Unlock your full potential and embrace a pain-free, active lifestyle with our transformative sports massage therapy, designed to nurture your body, mind, and spirit." price="30" duration="30 min" learnMorePath="/sports-massage"/>
             <BookingCard className="cards" title= "Active Cupping" image={ActiveCupping} description="Combines cupping therapy with physical movement or exercise to target specific areas, enhance blood flow, and improve muscle recovery and flexibility." price="30" duration="30 min" learnMorePath="/cupping-therapy"/>
             <BookingCard className="cards" title= "Hijamah Wet Cupping" image={CuppingTherapy} description="The process of using suction cups on the skin to draw out a small amount of blood, promoting detoxification and stimulating healing." price="45" duration="45 min" learnMorePath="/cupping-therapy"/>
           </div>
       </div>
 
-      <div className='centered-container-no-height hidden'>
-        <div className='rectangle-fw blue mobile-margin-botton' style={{ height: '85vh', marginBottom: '55vh' }}> 
+      <div className='centered-container-no-height book-laptop hidden'>
+        <div className='rectangle-fw contact-laptop blue mobile-margin-botton' style={{ height: '85vh', marginBottom: '55vh' }}> 
           <p className='center testimonial-title' style={{ marginBottom: '1rem'}} >
             Packages & Bundles
           </p>
@@ -62,7 +62,7 @@ function Book() {
               Take a look at our wide range of treatments and packages, specially tailored to optimize your experience, at an affordable price.
           </p>
 
-          <div className='horizontal column more-gap' style={{ alignItems: 'stretch'}}>
+          <div className='horizontal card-laptop column more-gap' style={{ alignItems: 'stretch'}}>
             <BookingCard className="cards" title= "Lite Detox" image={LiteDetox} description={["Consultation", "Infrared Deep Tissue Heat", "Hijama Wet Cupping"]} price="45" duration="45 min" style={{ height: '90%' }}/>
             <BookingCard className="cards" title= "Full Detox & Sports Therapy" image={FullDetox} description={["Consultation", "Sports Massage", "Infrared Deep Tissue Heat", "Hijama Wet Cupping"]} price="70" duration="1 hour" style={{ height: '90%' }}/>
           </div>

@@ -43,7 +43,7 @@ function ContactCard(props) {
   };
 
   return (
-    <div className="contact-card" style={props.style}>
+    <div className="contact-card laptop" style={props.style}>
       {
         !emailSent ? (
             <form ref={form} onSubmit={sendEmail} className='vertical-start input-padding gap-1'>

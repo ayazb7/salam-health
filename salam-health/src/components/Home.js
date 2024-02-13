@@ -174,7 +174,7 @@ const Home = () => {
       </div>
 
       <div className='centered-container-no-height hidden'>
-        <div className='rectangle-fw blue mobile-height' style={{ marginBottom: '64vh' }} > 
+        <div className='rectangle-fw laptop blue mobile-height' style={{ marginBottom: '64vh' }} > 
           <div className="testimonial-wrapper">
               <p className='center testimonial-title'>TESTIMONIALS</p>
 
@@ -198,7 +198,7 @@ const Home = () => {
           </div>
         </div>
 
-        <ContactCard style={{ top: '45%'}}/>
+        <ContactCard  style={{ top: '45%'}}/>
       </div>
 
       

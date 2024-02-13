@@ -1776,6 +1776,20 @@ h4, h3, h2, p {
     width: 35vw;
   }
   .home-text.laptop{
-    font-size: 28px;
+    font-size: 40px;
+  }
+  .rectangle-fw.laptop{
+    height: 60vh;
+  }
+  .contact-card.laptop{
+    height: 80vh;
+  }
+  .horizontal.card-laptop{
+    height: 83vh !important;
+  }
+  
+  .rectangle-fw.contact-laptop.blue.mobile-margin-botton{
+    height: 100vh !important;
+    margin-bottom: 75vh !important;
   }
 }
