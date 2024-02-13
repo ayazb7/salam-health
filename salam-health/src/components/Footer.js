@@ -58,7 +58,7 @@ function Footer() {
 
             <div className='footer-info-item'>
               <img src={address}/>
-              <p>White Building, 1-4 Cumberland Place, <br/> Southampton SO15 2NP</p>
+              <p>19 Oxford Street, Southampton <br/>SO14 3DJ</p>
             </div>
 
             <div className='footer-info-item'>
