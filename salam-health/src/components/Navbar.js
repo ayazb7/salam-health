@@ -32,6 +32,9 @@ function Navbar() {
       </a>
       
       <div className="nav-item-right desktop-only">
+        <a href="/cupping-therapy">Cupping Therapy</a>
+        <a href="/sports-message">Sports Massage</a>
+        <a href="/detox">Detox</a>
         <a href="/about">About Us</a>
         <button className="book-now" onClick={handleButtonClick}>
           Book Now
