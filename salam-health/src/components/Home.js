@@ -82,15 +82,15 @@ const Home = () => {
   
   return (
     <div className={`home-background ${startAnimation ? 'start-animation' : 'initial-hidden'}`}>
-      <div className="centered-container hidden">
+      <div className="centered-container laptop hidden">
         <img src={GroupImages2} className="plus-imagetop hidden"/>
-        <img src={GroupImages} className="plus-imagebot hidden"/>
+        <img src={GroupImages} className="plus-imagebot laptop hidden"/>
         <img src={dots} className="dots hidden"/>
-        <div className='horizontal'>
-        <div className='vertical-center-container'> 
+        <div className='horizontal laptop'>
+        <div className='vertical-center-container laptop'> 
           <div className='vertical-start'>
           <img src={Mobile1} className="mobile hidden"/>
-            <h3 className='home-text less-gap-2'>
+            <h3 className='home-text laptop less-gap-2'>
               Specialised Therapeutic <br></br> Treatments
             </h3>
 
@@ -105,7 +105,7 @@ const Home = () => {
           </div>
         </div>
 
-          <img src={CuppingImage} className="cuppingImage"/>
+          <img src={CuppingImage} className="cuppingImage laptop"/>
         </div>
       </div>
 

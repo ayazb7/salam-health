@@ -1759,3 +1759,22 @@ h4, h3, h2, p {
     z-index: 1;
   }
 }
+@media screen and (min-width: 900px) and (max-width: 1440px) {
+  /* Your CSS rules for this viewport range */
+  /* .vertical-center-container.laptop{
+    width: 20vw;
+  } */
+  .horizontal.laptop{
+    height: 60vh;
+    width: 75vw;
+  }
+  .plus-imagebot.laptop{
+    width: 5vw; 
+  }
+  .cuppingImage.laptop{
+    width: 35vw;
+  }
+  .home-text.laptop{
+    font-size: 28px;
+  }
+}
