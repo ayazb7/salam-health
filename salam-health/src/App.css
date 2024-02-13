@@ -442,6 +442,7 @@ h4, h3, h2, p {
   background-color: #012D61;
 }
 
+
 .rectangle-fw {
   width: 100vw;
   padding-top: 2rem;
@@ -1569,7 +1570,7 @@ h4, h3, h2, p {
   }
 
   .mobile-no-height{
-    height: auto;
+    height: auto !important;
   }
   .vertical-center .mobile-only{
     align-items: center;
